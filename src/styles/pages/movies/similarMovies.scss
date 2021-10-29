@@ -1,0 +1,32 @@
+.similarMovies {
+  &__SV-sec2 {
+    background-color: $white;
+    padding: 40px 0;
+    margin: 50px 0;
+  }
+  .card-img {
+    padding: 10px;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    background-color: transparent;
+  }
+  .bg-dark {
+    background-color: transparent !important;
+    border: 0px;
+  }
+
+  .bg-dark:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+  }
+  .card-img:hover {
+    display: block !important;
+  }
+  .bg-dark .card-img-overlay {
+    top: 230px;
+    display: none;
+  }
+  .bg-dark:hover .card-img-overlay {
+    display: block;
+  }
+}

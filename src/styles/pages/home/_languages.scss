@@ -1,0 +1,41 @@
+.languages {
+  margin-top: 120px;
+  padding-top: 30px;
+  height: inherit;
+  background: rgba(255, 207, 75, 0.2);
+  padding-bottom: 40px;
+  position: relative;
+  &__HL-text1 {
+    position: absolute;
+    top: 34px;
+    left: 127px;
+    @include font-style-Baloo(normal, 400, 120px, 46.51px, #50556510);
+  }
+  &__HL-img1 {
+    position: absolute;
+    left: 0px;
+    top: -120px;
+  }
+  &__scroller {
+    margin: 0px 40px;
+  }
+  &__title {
+    padding: 30px 0 0px 135px;
+    @include font-style-Baloo(normal, 400, 36px, 46.51px, $purple87);
+  }
+  &__lang-card {
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    margin-right: 20px;
+    &__title {
+      @include font-style-Baloo(normal, 700, 32px, 15px, $white);
+    }
+    &__sub-title {
+      @include font-family-width(normal, 500, 16px, 24px, $black);
+    }
+  }
+}

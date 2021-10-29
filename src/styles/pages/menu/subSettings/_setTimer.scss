@@ -1,0 +1,33 @@
+.setTimer {
+    &__container {
+        background: $white;
+        border-radius: 50px;
+        padding: 30px;
+    }
+
+    &__back-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &__back-text {
+            padding-left: 0.625rem;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            color: $lightGrey;
+        }
+    }
+
+    &__heading {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23.25px;
+        color: $lightpurple80;
+    }
+
+    &__subText {
+        color: $lightGrey;
+    }
+}

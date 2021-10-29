@@ -1,0 +1,41 @@
+.edit-account {
+  @include account-card-view;
+  &__btn-transparent {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 4.5rem;
+    height: 2.5rem;
+    text-align: center;
+    color: $blue !important;
+    position: absolute;
+    right: 1rem;
+    padding: 0.9375rem;
+  }
+  &__btn-transparent:hover {
+    color: $blue !important;
+    cursor: pointer;
+  }
+  &__update-mobile {
+    position: absolute;
+    right: 0rem;
+  }
+  &__update-mobile:hover {
+    cursor: pointer;
+  }
+  &__update {
+    position: absolute;
+    right: 1rem;
+  }
+  &__update:hover {
+    cursor: pointer;
+  }
+  &__title-24 {
+    @include font-style-Baloo(normal, 400, 24px, 37.78px, $grey80);
+  }
+  &__sub-title-14 {
+    @include font-family-width(normal, 400, 14px, 21px, $grey80);
+  }
+  &__white-text {
+    @include font-style-Baloo(normal, 400, 18px, 20px, $white);
+  }
+}

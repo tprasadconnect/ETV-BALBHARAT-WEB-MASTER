@@ -1,0 +1,40 @@
+.registration {
+  @include login-flow-form;
+  &__register_success {
+    text-align: center;
+  }
+  &__pass-wrapper {
+    position: relative;
+    margin-bottom: 0.875rem;
+  }
+  &__pwdicon {
+    position: absolute;
+    right: 0px;
+    padding: 15px;
+  }
+  &__mobilePrefix {
+    position: absolute;
+    padding: 0.7rem 0.75rem;
+    @include font-family-width(normal, 500, 1rem, 1.875rem);
+  }
+  &__pl-45 {
+    padding-left: 2.8125rem;
+  }
+  &__pwdicon:hover {
+    color: green;
+    cursor: pointer;
+  }
+  &__pwd-instructions-container {
+    padding-top: 22px;
+  }
+  &__pwd-instructions {
+    @include font-family-width(normal, 500, 12px, 18px, $orange);
+  }
+  .registerCheck {
+    display: inline;
+  }
+  .termsLink {
+    cursor: pointer;
+    color: $skyBlue;
+  }
+}

@@ -1,0 +1,30 @@
+.toonsBanner {
+  padding-bottom: 20px;
+  .toonsLink {
+    margin: 0 5px;
+    display: inline-block;
+    img {
+      height: 90px;
+      width: 90px;
+      border-radius: 45px;
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 200px) {
+  .toonsBanner {
+    padding-bottom: 0px;
+  }
+  .toonsBanner .toonsLink {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  .toonsBanner .toonsLink img {
+    height: 48px;
+    width: 48px;
+    border-radius: 45px;
+  }
+  .toonsBanner .horizontal-menu .scroll-menu-arrow {
+    margin: 0px !important;
+    display: none;
+  }
+}

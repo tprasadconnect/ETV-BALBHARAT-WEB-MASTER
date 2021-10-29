@@ -1,0 +1,17 @@
+.updateMobile {
+  &__otp-resend {
+    @include font-family-width(normal, 600, 14px, 24px, $skyBlue);
+    cursor: pointer;
+    border: none;
+    background-color: $white;
+  }
+  &__otp-not-received {
+    @include font-family-width(normal, 400, 14px, 24px, $grey90);
+  }
+  &__update-mobile-parent-only {
+    @include font-family-width(normal, 600, 16px, 24px, $grey80);
+  }
+  &__enter-new-mobile {
+    @include font-family-width(normal, 400, 14px, 24px, $grey90);
+  }
+}

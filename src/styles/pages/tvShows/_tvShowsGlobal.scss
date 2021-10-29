@@ -1,0 +1,170 @@
+.TvShowsGlobal {
+  &__SP-sec3 {
+    position: relative;
+    margin: 80px 0;
+    padding: 40px 0;
+    h3 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 36px;
+      color: #000;
+      padding-bottom: 40px;
+    }
+
+    &__SPS-asset4 {
+      position: absolute;
+      right: 16%;
+      top: -100px;
+    }
+    &__viewall-container {
+      display: block;
+      text-align: right;
+      white-space: nowrap;
+      padding-right: 30px;
+      margin-top: 25px;
+    }
+    &__global-viewall-link {
+      display: none;
+    }
+
+    &__subContent {
+      .SPS-text1 {
+        top: -92px;
+        left: 127px;
+        font-size: 120px;
+        font-family: 'Baloo 2', cursive;
+        color: #000000;
+        opacity: 0.08;
+        position: absolute;
+      }
+      .card-img {
+        padding: 10px;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        background-color: transparent;
+      }
+      .bg-dark {
+        background-color: transparent !important;
+        border: 0px;
+      }
+      .bg-dark:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+      }
+      .card-img:hover {
+        display: block !important;
+      }
+      .bg-dark .card-img-overlay {
+        top: 230px;
+        display: none;
+      }
+      .bg-dark:hover .card-img-overlay {
+        display: block;
+      }
+      .p11 {
+        padding-left: 11%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .TvShowsGlobal {
+    &__SP-sec3 {
+      position: relative;
+      margin: 120px 0;
+      padding-top: 0px;
+      &__SPS-asset4 {
+        position: absolute;
+        right: 0%;
+        top: -100px;
+        height: 150px;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-left: 10px;
+      }
+      .SPS-text-bb {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding: 5px 0 10px 10px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__global-viewall-btn {
+        display: none;
+      }
+      &__global-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 14px, 11px, $red80);
+      }
+      &__subContent {
+        .SPS-text1 {
+          top: 2px;
+          left: 26px;
+          @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+          opacity: 0.08;
+          position: absolute;
+        }
+        .p11 {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .TvShowsGlobal {
+    &__SP-sec3 {
+      position: relative;
+      margin: 150px 0;
+      padding-top: 0px;
+      &__SPS-asset4 {
+        position: absolute;
+        right: 0%;
+        top: -100px;
+        height: 160px;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-left: 15px;
+      }
+      .SPS-text-bb {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding: 5px 0 10px 25px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__global-viewall-btn {
+        display: none;
+      }
+      &__global-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 16px, 11px, $red80);
+      }
+      &__subContent {
+        .SPS-text1 {
+          top: 2px;
+          left: 26px;
+          @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+          opacity: 0.08;
+          position: absolute;
+          margin-left: 10px;
+        }
+        .p11 {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}

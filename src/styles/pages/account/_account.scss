@@ -1,0 +1,118 @@
+.account {
+  $pointer_cursor: pointer;
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 34px;
+    margin-top: 10%;
+  }
+  &__acnt-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__back-btn {
+    &__content {
+      @include flex-box;
+      position: relative;
+    }
+    @include flex-box;
+    cursor: $pointer_cursor;
+    position: absolute;
+    &__back-text {
+      padding-left: 0.625rem;
+      border: none;
+      background-color: $white;
+      @include font-family-width(normal, 600, 1.125rem, 1.25rem, $lightGrey);
+    }
+  }
+  &__delete-account-text {
+    cursor: $pointer_cursor;
+    @include font-family-width(normal, 600, 0.75rem, 1.125rem, $red05);
+  }
+  &__act-text {
+    padding: 50px 0px;
+    @include font-family-width(normal, 700, 20px, 25.84px, $lightpurple80);
+  }
+  &__act-detail {
+    display: flex;
+  }
+  &__act-detail-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    width: 45%;
+  }
+  &__act-detail-right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+  }
+  &__act-detail-left-bottom {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__watch-history {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__history-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 2px;
+    margin: 10px;
+  }
+  &__whistory-Subscription-text {
+    @include font-family-width(normal, 500, 12px, 18px);
+    cursor: $pointer_cursor;
+  }
+  &__parent-acnt-name {
+    position: relative;
+    @include font-family-width(normal, bold, 16px, 24px, $black);
+    padding-left: 20px;
+  }
+  &__change-password-link {
+    margin-left: 1.25rem;
+    @include font-family-width(normal, 500, 14px, 24px, $skyBlue);
+  }
+
+  &__act-detail-right-top {
+    padding-left: 10px;
+    @include font-family-width(normal, 700, 18px, 23.25px, $grey80);
+  }
+  &__act-detail-right-addkid {
+    padding-left: 10px;
+    cursor: pointer;
+    @include font-family-width(normal, 600, 16px, 21px, $skyBlue);
+  }
+  &__child-name-selected {
+    @include font-family-width(normal, 700, 16px, 24px, $black);
+  }
+  &__child-name-unselected {
+    @include font-family-width(normal, 500, 16px, 24px, $grey80);
+  }
+  &__child-info {
+    @include font-family-width(normal, 400, 12px, 12px, $lightGrey);
+    &__age {
+      @include font-family-width(normal, 700, 20px, 12px, $lightGrey);
+    }
+  }
+  &__child-edit {
+    @include font-family-width(normal, 600, 12px, 18px, $skyBlue);
+    padding-top: 10px;
+    cursor: $pointer_cursor;
+  }
+  &__child-content {
+    margin: 40px 40px 0 0;
+  }
+  &__child-avatar {
+    cursor: $pointer_cursor;
+  }
+  &__kids_profile_container {
+    overflow: scroll;
+    // width: 500px;
+    max-height: 400px;
+  }
+}

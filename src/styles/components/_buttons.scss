@@ -1,0 +1,116 @@
+.btn-yeelow-dark {
+  background-color: transparent !important;
+  background-image: url(../../assets/images/loadMore.svg);
+  background-repeat: no-repeat;
+  width: 7.5rem;
+  height: 2.5rem;
+  text-align: center;
+  color: #931B1D !important;
+  border: none !important;
+}
+
+.btn-yeelow {
+  background-color: transparent !important;
+  background-image: url(../../assets/images/btn-yellow.svg);
+  background-repeat: no-repeat;
+  width: 7.5rem;
+  height: 2.5rem;
+  text-align: center;
+  color: #931B1D !important;
+  border: none !important;
+  text-transform: uppercase;
+}
+.btn-pink {
+  background-color: transparent !important;
+  background-image: url(../../assets/images/btn-pink.svg);
+  background-repeat: no-repeat;
+  width: 7.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border: none !important;
+  color: $white !important;
+}
+.btn-pink-watchnow {
+  background-color: transparent !important;
+  background-image: url(../../assets/images/watch-now-button.svg);
+  background-repeat: no-repeat;
+  width: 135px;
+  padding-right: 20px;
+  height: 2.5rem;
+  text-align: center;
+  color: $white;
+}
+
+.btn-transparent {
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  width: 7.5rem;
+  height: 2.5rem;
+  text-align: center;
+  color: $red !important;
+  border: none !important;
+}
+.btn-transparent:hover {
+  color: $red !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: $white;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-primary:focus {
+  color: $white;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem transparent;
+}
+.btn-primary {
+  color: $white;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-register {
+  color: $white;
+  background-color: $red05 !important;
+  border-color: transparent !important;
+  border-radius: 12px;
+  @include font-family-Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.btn-blue {
+  background: #3750B2;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  &:hover, &:focus, &:active {
+    background: #3750B2;
+  }
+}
+
+.btn-yellow {
+  background: linear-gradient(90.81deg, #FFA001 0.5%, #FFC107 99.36%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  &:hover, &:focus, &:active {
+    background: linear-gradient(90.81deg, #FFA001 0.5%, #FFC107 99.36%);
+  }
+}

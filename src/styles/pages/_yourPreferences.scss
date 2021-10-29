@@ -1,0 +1,35 @@
+.your-Preferences {
+  &__poster {
+    position: relative;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    max-height: 250px;
+    &__poster-image {
+      display: inline-block;
+      max-width: 160px;
+      border-radius: 12px;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+      }
+      &__poster-select {
+        position: absolute;
+        right: 5px;
+        top: -15px;
+      }
+    }
+    .active {
+      box-shadow: 0px 0px 10px $lightpurple80;
+    }
+    &__poster-name {
+      text-align: start;
+      margin-bottom: 20px;
+      padding: 15px 0px 10px 10px;
+      @include font-family-width(normal, 500, 14px, 21px, $lightpurple80);
+    }
+  }
+  &__select-preference-error {
+    @include font-family-width(normal, 500, 14px, 21px, $error);
+  }
+}

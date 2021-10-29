@@ -1,0 +1,15 @@
+.cwatching {
+  height: 340px;
+  background: $white;
+  &__title {
+    padding: 20px 0 20px 127px;
+    @include font-style-Baloo(normal, 400, 24px, 31.01px, $black);
+  }
+  &__cattype {
+    padding: 0px 2px 0px 2px;
+    position: relative;
+    background: #f9265d;
+    border-radius: 4px;
+    @include font-family-width(normal, 400, 14px, 20px, $white);
+  }
+}

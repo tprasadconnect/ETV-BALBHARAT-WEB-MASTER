@@ -1,0 +1,50 @@
+.feedbackAsk {
+  @include font-family-width(normal, 600, 14px, 21px, $lightBlack);
+}
+.emoji-container {
+  margin: 10px 0;
+}
+.fb-submit {
+  color: #fff;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.emoji-btn {
+  border-radius: 50%;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.emoji-icon-desc {
+  text-align: center;
+}
+.emoji-active {
+  box-shadow: 1px 1px 9px blue;
+  border-radius: 50%;
+}
+.emoji-icon {
+  height: 50px;
+  width: 50px;
+}
+.emoji-desc {
+  margin-top: 10px;
+  @include font-family-width(normal, 500, 12px, 18px, $grey80);
+}
+.emoji-error {
+  display: block;
+  margin-top: 10px;
+  @include font-family-width(normal, 500, 12px, 18px, $red57);
+}
+.feedback-comments {
+  @include font-family-width(normal, 600, 14px, 21px, $lightBlack);
+  margin-bottom: 10px;
+}
+.feedback-comments-input {
+  max-width: 352px;
+  height: 171px !important;
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: 12px;
+}
+.feedback-submit-btn {
+  margin: 10px 0;
+  justify-content: flex-start;
+}

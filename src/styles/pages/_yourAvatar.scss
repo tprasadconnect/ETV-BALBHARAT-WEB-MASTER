@@ -1,0 +1,53 @@
+.your-avatar {
+  .avatarScroll {
+    overflow-y: scroll;
+    max-height: 200px;
+  }
+  &__avatar {
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    &__avatar-image {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      background: $white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      border-radius: 50%;
+      border: 2px solid #f9265d;
+      margin-bottom: 20px;
+    }
+    &__avatar-big-image {
+      display: inline-block;
+      width: 144px;
+      height: 144px;
+      background: $white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      border-radius: 50%;
+      border: 2px solid $white;
+    }
+    &__name {
+      @include font-style-Baloo(normal, 500, 24px, 38px, $lightpurple80);
+    }
+    .avatar1 {
+      @include avatar-image('avatar1.png');
+    }
+    .avatar2 {
+      @include avatar-image('avatar2.png');
+    }
+    .avatar3 {
+      @include avatar-image('avatar3.png');
+    }
+    .avatar4 {
+      @include avatar-image('avatar4.png');
+    }
+    .big_avatar_1 {
+      @include avatar-image('big_avatar_1.png');
+    }
+    .active {
+      border: 2px solid $purple;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import '../abstracts/mixins';
+
+.form-control:focus {
+  outline: 0;
+  height: 3.125rem;
+  border-radius: 0.625rem;
+  box-shadow: none;
+}
+
+.form-control {
+  @include font-family-width(normal, 500, 16px, 1.875rem, $black);
+  background: $white;
+  height: 3.125rem !important;
+  border: 0.0625rem solid #d3d4d8;
+  box-sizing: border-box;
+  border-radius: 0.625rem;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $lightGrey;
+  span {
+    color: $lightRed;
+  }
+}
+
+// ======================for form error state==================
+.form-control.is-invalid {
+  border-color: $red;
+  background-color: $red10;
+  background-image: none;
+}
+
+.invalid-feedback {
+  text-align: end;
+  @include font-family-width(normal, 400, 12px, 18px, $red);
+}
+
+// ======================for form error state==================
+
+// ========== form box start ================
+.Form-box {
+  @include smallDisplay() {
+    padding: 2.5rem 0.9375rem 0.9375rem;
+    min-height: calc(100vh - 19.687rem);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  background-color: $white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0rem 2.375rem 3.125rem 2.375rem;
+  color: $black;
+  font-size: 0.75rem;
+  margin-top: -0.1875rem;
+  min-height: calc(100vh - 12.625rem);
+  padding-top: 1rem;
+  &__L-link {
+    font-size: 0.75rem;
+    color: $black;
+  }
+  &__L-social div {
+    @include social-media-icon;
+  }
+}
+
+// =================== form checkbox =================
+.form-check-input {
+  position: absolute;
+  margin-top: 0.1rem;
+  margin-left: -1.25rem;
+}
+
+.select,
+.select:focus {
+  background-image: url(../../assets/images/select_option.svg) !important;
+  background-position: calc(100% - 8px) 18px;
+  background-size: 15px !important;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

@@ -1,0 +1,39 @@
+.menu {
+  $pointer_cursor: pointer;
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 20px 30px;
+  }
+  &__menu__icon {
+    height: 30px;
+    width: 30px;
+  }
+  &__settings-option {
+    @include smallDisplay() {
+      @include font-family-width(normal, 400, 12px, 21px, $grey80);
+    }
+    @include font-family-width(normal, 400, 14px, 21px, $grey80);
+    cursor: $pointer_cursor;
+  }
+  &__card-block {
+    min-width: 145px;
+  }
+  &__card {
+    padding: 0 2px;
+    background: #f0f1f3;
+    border-radius: 12px;
+    &__name {
+      @include font-family-width(normal, normal, 14px, 21px, $grey80);
+    }
+    cursor: $pointer_cursor;
+  }
+  &__avatar {
+    &__name {
+      @include smallDisplay() {
+        @include font-style-Baloo(normal, 500, 14px, 38px, $lightpurple80);
+      }
+      @include font-style-Baloo(normal, 500, 20px, 38px, $lightpurple80);
+    }
+  }
+}

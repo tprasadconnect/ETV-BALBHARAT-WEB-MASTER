@@ -1,0 +1,50 @@
+.home-mybb {
+  margin-top: 80px;
+  padding-top: 30px;
+  height: inherit;
+  padding-bottom: 40px;
+  position: relative;
+  background: $white;
+  &__title {
+    padding: 30px 0 0px 130px;
+    @include font-style-Baloo(normal, 400, 36px, 46.51px, $purple87);
+  }
+  &__HL-text1 {
+    position: absolute;
+    top: 46px;
+    left: 124px;
+    @include font-style-Baloo(normal, 400, 120px, 46.51px, #50556510);
+  }
+  &__title-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__mybb-viewAll {
+    margin-right: 131px;
+    padding-top: 30px;
+    @include font-family-width(normal, 600, 16px, 11px, $purple87);
+  }
+  &__mybb-image-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 40px 124px;
+  }
+  &__mybb-image {
+    height: 350px;
+    max-width: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    transition: transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -webkit-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -o-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+  }
+  &__mybb-image:hover {
+    z-index: 4;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
+  }
+}

@@ -1,0 +1,59 @@
+.myFavourites {
+  .myFav {
+    border-radius: 10px;
+  }
+  .heading {
+    padding-top: 10px;
+  }
+  .tvshows {
+    background: #e91f63;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 13px;
+    color: $white;
+  }
+  .movies {
+    color: $white;
+    background: $purple;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 13px;
+  }
+  .episode {
+    color: $lightBlue;
+    font-size: 12px;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .description {
+    color: $grey90;
+    font-size: 11px;
+  }
+  .episodePic {
+    border-radius: 20px;
+    width: 100%;
+    height: 130px;
+  }
+  .selectCategory {
+    float: right;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .contentClass {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .episodePic {
+    border-radius: 20px;
+    width: 100%;
+    height: 62px !important;
+  }
+
+}

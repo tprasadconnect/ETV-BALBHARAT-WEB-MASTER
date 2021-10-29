@@ -1,0 +1,415 @@
+.subCategories {
+  &__banner img {
+    position: absolute;
+    width: 100%;
+    max-height: 500px;
+    top: 14px;
+  }
+  &__mbanner {
+    display: none;
+  }
+  &__sl-sec1 {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  &__spl-asset1 {
+    position: absolute;
+    right: 0px;
+    top: 170px;
+    height: 300px;
+  }
+  &__sls-text1 {
+    top: 350px;
+    left: 36px;
+    @include font-style-Baloo(normal, 400, 120px, 155px, $black);
+    opacity: 0.08;
+    position: absolute;
+  }
+  &__title-container {
+    position: absolute;
+    top: 407px;
+    left: 45px;
+  }
+  &__app-name {
+    @include font-family-width(normal, 400, 16px, 20px, $black);
+  }
+  &__subcat-title {
+    @include font-style-Baloo(normal, 400, 36px, 46px, $black);
+  }
+  &__mt {
+    margin-top: 480px;
+  }
+  &__subcat-vlist1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 40px;
+  }
+  &__subcat-vlist2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin: 30px 40px 10px 40px;
+  }
+  &__dark-gradient {
+    position: absolute;
+    width: 230px;
+    height: 160px;
+    top: 140px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  &__show-details {
+    position: absolute;
+    width: 180px;
+    margin: 20px;
+    bottom: 40px;
+    @include font-family-width(normal, 700, 20px, 20px, $white);
+  }
+  &__show-seasons {
+    position: absolute;
+    width: 180px;
+    margin: 0 20px;
+    bottom: 20px;
+    @include font-family-width(normal, 400, 14px, 20px, $white);
+  }
+  &__img-container {
+    position: relative;
+    height: 300px;
+    width: 220px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--BG_COLOR_L1);
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    transition: transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -webkit-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -o-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+  }
+  &__img-container:hover {
+    z-index: 4;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
+  }
+  &__card-img {
+    position: absolute;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+  }
+  &__dark-gradient {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  &__card-content {
+    position: absolute;
+    bottom: 0px;
+  }
+  &__card-playicon {
+    margin: 0 20px 8px 20px;
+  }
+  &__card-title {
+    margin: 0 20px 8px 20px;
+    @include font-family-width(normal, 700, 20px, 20px, $white);
+  }
+  &__tvshow-info {
+    margin: 0 20px 20px 20px;
+    @include font-family-width(normal, 400, 14px, 20px, $white);
+  }
+  &__show-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  &__cw-dark-gradient {
+    position: absolute;
+    width: 300px;
+    height: 160px;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  &__cw-img-container {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 0px 20px 10px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: var(--BG_COLOR_L1);
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    transition: transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -webkit-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+      -o-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+  }
+  &__cw-img-container:hover {
+    z-index: 4;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
+  }
+  &__cw-img {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  &__cw-content {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  &__cw-playicon {
+    margin: 10px;
+  }
+  &__cw-details {
+    margin: 10px;
+    @include font-family-width(normal, 700, 20px, 20px, $white);
+  }
+  &__cw-progress-bar {
+    margin: 10px;
+  }
+
+  &__adBanner {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid $shadedPurple;
+  }
+}
+
+//================================================================
+.SPL-asset2 {
+  position: relative;
+  top: -60px;
+  left: 20px;
+}
+.SL-sec2 {
+  margin-top: 50px;
+}
+.Shows-List .SL-sec2 {
+  position: relative;
+}
+.Shows-List .SL-sec2 .SL-tag {
+  background-color: #ffcf4b;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #463987;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.adBannerInfo {
+  color: $white;
+  padding: 0 0 10px 50px;
+}
+.Shows-List .SL-sec2 h4 {
+  font-family: 'Baloo 2', cursive;
+  color: #fff;
+  font-size: 34px;
+}
+.Shows-List .SL-sec2 .dot {
+  width: 8px;
+  height: 8px;
+  background: #ffcf4b;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+.Shows-List .SL-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.Shows-List .SL-list .SLL-item {
+  width: 20%;
+  padding: 5px;
+}
+.Shows-View .Video {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.Shows-View .SV-tag {
+  background-color: #463987;
+  border-radius: 4px;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.Shows-View .SV-share {
+  font-size: 14px;
+  color: #505565;
+  text-decoration: none;
+}
+
+.adBannerContainer {
+  position: relative;
+  width: 100%;
+}
+.adBanner {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}
+
+@media only screen and (max-width: 479px) {
+  .subCategories {
+    &__banner {
+      display: none;
+    }
+    &__mbanner {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    &__mbanner {
+      width: 100%;
+    }
+    &__spl-asset1 {
+      position: absolute;
+      right: 0px;
+      top: 210px;
+      height: 130px;
+    }
+    &__sls-text1 {
+      top: 330px;
+      left: 10px;
+      font-family: 'Baloo 2', cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 54px;
+      line-height: 69px;
+      color: #000000;
+      opacity: 0.08;
+      position: absolute;
+    }
+    &__title-container {
+      position: absolute;
+      top: 326px;
+      left: 16px;
+    }
+    &__tvshow-back {
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 16px;
+      z-index: 5;
+    }
+    &__mt {
+      margin-top: 380px;
+    }
+    &__subcat-vlist1 {
+      margin: 10px 10px;
+    }
+    &__subcat-vlist2 {
+      margin: 10px 10px;
+    }
+    &__img-container {
+      position: relative;
+      height: 220px;
+      width: 160px;
+      margin: 0px 6px 15px 6px;
+      border-radius: 10px;
+    }
+    &__img-container:hover {
+      z-index: 0;
+      transform: translate3d(0, 0, 0);
+    }
+    &__card-img {
+      position: absolute;
+      height: 220px;
+      width: 160px;
+      border-radius: 10px;
+    }
+    &__adBannerContainer {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .subCategories {
+    &__banner {
+      display: none;
+    }
+    &__mbanner {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: -110px;
+    }
+    &__mbanner {
+      width: 100%;
+    }
+    &__spl-asset1 {
+      position: absolute;
+      right: 0px;
+      top: 280px;
+      height: 180px;
+    }
+    &__sls-text1 {
+      top: 410px;
+      left: 10px;
+      font-family: 'Baloo 2', cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 54px;
+      line-height: 69px;
+      color: #000000;
+      opacity: 0.08;
+      position: absolute;
+    }
+    &__title-container {
+      position: absolute;
+      top: 406px;
+      left: 16px;
+    }
+    &__tvshow-back {
+      display: block;
+      position: absolute;
+      top: 150px;
+      left: 16px;
+      z-index: 5;
+    }
+    &__mt {
+      margin-top: 480px;
+    }
+    &__subcat-vlist1 {
+      margin: 10px 10px;
+    }
+    &__subcat-vlist2 {
+      margin: 10px 10px;
+    }
+    &__img-container {
+      position: relative;
+      height: 220px;
+      width: 160px;
+      margin: 0px 6px 15px 6px;
+      border-radius: 10px;
+    }
+    &__img-container:hover {
+      z-index: 0;
+      transform: translate3d(0, 0, 0);
+    }
+    &__card-img {
+      position: absolute;
+      height: 220px;
+      width: 160px;
+      border-radius: 10px;
+    }
+    &__adBannerContainer {
+      display: none;
+    }
+  }
+}

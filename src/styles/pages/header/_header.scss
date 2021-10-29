@@ -1,0 +1,365 @@
+.header-container {
+  .header-container-web {
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    height: 80px;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .Hi-img {
+      position: absolute;
+      left: 0px;
+    }
+    ul {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        width: 130px;
+        height: 80px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          display: inline-block;
+          font-size: 12px;
+          color: $black;
+          font-weight: 500;
+          text-decoration: none;
+          span {
+            display: block;
+          }
+        }
+        &.active {
+          vertical-align: top;
+          box-shadow: 1px 1px 6px $lightGray2;
+          position: relative;
+          height: 80px;
+          .active-redirect-btn {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            height: 30px;
+            background-color: transparent;
+            z-index: 1;
+          }
+          @include minDisplay() {
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              left: 3px;
+              right: 0;
+              height: 30px;
+              bottom: -30px;
+              background-image: url('../../../assets/images/DownArraow2.svg');
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .Login-btn {
+      display: flex;
+      cursor: pointer;
+      .notification {
+        background: $darkBLue3;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          right: -4px;
+          font-size: 10px;
+          line-height: 6px;
+          text-align: center;
+          text-transform: capitalize;
+          background: $rede5;
+          color: $white;
+          border-radius: 20px;
+          padding: 4px;
+        }
+      }
+      .profile-pic {
+        width: 31px;
+        height: 31px;
+        background: $white;
+        border-radius: 80px;
+        border: 2px solid $red80;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+.bottomHeader {
+  display: none;
+  .nav-link {
+    display: block;
+    padding: 0px;
+  }
+}
+.homeLandingPage .carouselContent {
+  padding-top: 0px !important;
+  padding-bottom: 0px;
+}
+.dynamicUserPic {
+  width: 31px !important;
+  height: 31px !important;
+}
+
+@media only screen and (max-width: 780px) {
+  .subMenu {
+    box-shadow: 0px 3px 6px -3px;
+    border: 1px solid $white;
+    border-radius: 10px;
+    margin: 0px 20px;
+  }
+  .mainFooter {
+    padding-bottom: 70px;
+  }
+  .onHeader {
+    float: right;
+    margin: 10px;
+  }
+  // .homeLandingPage .carouselContent {
+  //   padding-top: 0px !important;
+  //   padding-bottom: 0px !important;
+  // }
+
+  .header-container-web {
+    display: none;
+  }
+  .mobileTopSection {
+    padding: 10px;
+  }
+  .Login-btn {
+    display: flex;
+    cursor: pointer;
+    float: right;
+  }
+  .notification {
+    background: $darkBLue3;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .notificationcount {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    font-size: 10px;
+    line-height: 6px;
+    text-align: center;
+    text-transform: capitalize;
+    background: $rede5;
+    color: $white;
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .profile-pic {
+    width: 31px !important;
+    height: 31px !important;
+    background: $white;
+    border-radius: 80px;
+    border: 2px solid $red80;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  }
+  .bottomHeader {
+    display: block;
+  }
+  .bottomHeader {
+    padding: 10px 15px 0px 15px;
+    height: 70px;
+    z-index: 40;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+  }
+  .bottomHeader ul {
+    background: $white;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .bottomHeader ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    width: 16%;
+    margin: 0px 4px 0px 4px;
+    padding-top: 10px;
+  }
+  .bottomHeader ul li a {
+    text-decoration: none;
+  }
+  .bottomHeader ul li a span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 2px;
+    color: $black;
+    text-transform: capitalize;
+  }
+  .bottomHeader ul li:active {
+    position: relative;
+    border-top: 2px solid $red80;
+    margin: -2px 4px 0px 4px;
+  }
+  .bottomHeader ul li:active span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: $black;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1367px) {
+  .customCarousel .mainCarousel__img-size {
+    height: 761px !important;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 781px) {
+  .header-container .header-container-web .Hi-img {
+    position: absolute;
+    left: 0px;
+    width: 24% !important;
+  }
+  .miniScreens {
+    width: 90px !important;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 900px) {
+  .header-container .header-container-web .Hi-img {
+    position: absolute;
+    left: 0px;
+    width: 20% !important;
+  }
+  .miniScreens {
+    width: 100px !important;
+  }
+}
+@media only screen and (max-width: 1160px) and (min-width: 1024px) {
+  .header-container .header-container-web ul li.active::after {
+    display: none;
+  }
+  .header-container .header-container-web .Hi-img {
+    position: absolute;
+    left: 0px;
+    width: 20% !important;
+  }
+  .miniScreens {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 655px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 14px;
+    width: 17%;
+  }
+}
+@media only screen and (max-width: 654px) and (min-width: 568px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 17px;
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 567px) and (min-width: 510px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 13px;
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 509px) and (min-width: 468px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 13px;
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 467px) and (min-width: 418px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 11px;
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 417px) and (min-width: 364px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 7px;
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 363px) and (min-width: 200px) {
+  .bottomHeader ul li {
+    margin: 0px 4px 0px 5px;
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 200px) {
+  .homeLandingPage .carouselContent {
+    padding-bottom: 0px !important;
+  }
+  .responsiveLogoContent {
+    margin-bottom: -26px;
+    z-index: 1;
+    display: block !important;
+  }
+  .responsivelogo {
+    height: 80px;
+    padding-left: 7px;
+  }
+  .logoBackground {
+    background-image: url(../../../assets/images/logo-bg.svg);
+    background-repeat: no-repeat;
+    height: 124px;
+    img {
+      height: 80px;
+      width: 125px;
+    }
+  }
+  .aboutUs {
+    a img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.responsiveLogoContent {
+  display: none;
+}
+.logo.active {
+  a {
+    padding-top: 0px;
+  }
+}
+.logo {
+  a {
+    padding-top: 17px;
+  }
+}

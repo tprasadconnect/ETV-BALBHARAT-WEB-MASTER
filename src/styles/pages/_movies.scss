@@ -1,0 +1,366 @@
+.movies {
+  &__title {
+    margin: 10px 123px;
+    @include font-style-Baloo(normal, 400, 36px, 46.51px, $purple87);
+  }
+  &__topBg {
+    display: none;
+  }
+  &__mTop {
+    display: none;
+  }
+  &__janeRightLogo {
+    display: none;
+  }
+  &__subCategories {
+    &__banner img {
+      position: absolute;
+      width: 100%;
+      max-height: 500px;
+      top: 14px;
+    }
+    &__sl-sec1 {
+      position: relative;
+      padding-bottom: 50px;
+    }
+    &__msl-sec1 {
+      display: none;
+    }
+    &__spl-asset1 {
+      position: absolute;
+      left: -136px;
+      top: 0px;
+      width: 435px;
+      height: 300px;
+    }
+    &__mspl-asset1 {
+      display: none;
+    }
+    &__sls-text1 {
+      top: 104px;
+      left: 174px;
+      @include font-style-Baloo(normal, 400, 120px, 155px, $black);
+      opacity: 0.08;
+      position: absolute;
+    }
+    &__title-container {
+      position: absolute;
+      top: 161px;
+      left: 180px;
+    }
+    &__app-name {
+      @include font-family-width(normal, 400, 16px, 20px, $black);
+    }
+    &__subcat-title {
+      @include font-style-Baloo(normal, 400, 36px, 46px, $black);
+    }
+    &__mt {
+      margin-top: 242px;
+    }
+    &__subcat-vlist1 {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin: 10px 40px;
+    }
+    &__subcat-vlist2 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin: 30px 40px 10px 40px;
+    }
+    &__dark-gradient {
+      position: absolute;
+      width: 230px;
+      height: 160px;
+      top: 140px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    }
+    &__show-details {
+      position: absolute;
+      width: 180px;
+      margin: 10px;
+      bottom: 40px;
+      @include font-family-width(normal, 700, 20px, 20px, $white);
+      img {
+        display: block;
+        padding: 10px 0px;
+      }
+    }
+    &__show-seasons {
+      position: absolute;
+      width: 180px;
+      margin: 10px;
+      bottom: 10px;
+      @include font-family-width(normal, 400, 14px, 20px, $white);
+      span {
+        background: $red57;
+        font-size: 12px;
+        border-radius: 5px;
+        padding: 2px 5px;
+        float: right;
+      }
+    }
+    &__img-container {
+      position: relative;
+      height: 300px;
+      width: 220px;
+      margin: 0px 20px 20px 0px;
+      border-radius: 10px;
+      cursor: pointer;
+      background: var(--BG_COLOR_L1);
+      overflow: hidden;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      transition: transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+        -webkit-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93),
+        -o-transform 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    }
+    &__img-container:hover {
+      z-index: 4;
+      transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
+    }
+    &__card-img {
+      position: absolute;
+      height: 300px;
+      width: 220px;
+      border-radius: 10px;
+    }
+    &__dark-gradient {
+      position: absolute;
+      width: 100%;
+      height: 160px;
+      bottom: 0px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    }
+    &__card-content {
+      position: absolute;
+      bottom: 0px;
+    }
+    &__card-playicon {
+      margin: 0 20px 8px 20px;
+    }
+    &__card-title {
+      margin: 0 20px 8px 20px;
+      @include font-family-width(normal, 700, 20px, 20px, $white);
+    }
+    &__card-info {
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+      margin: 0 20px 20px 20px;
+    }
+    &__card-year {
+      @include font-family-width(normal, 400, 14px, 18px, $white);
+    }
+    &__card-duration {
+      width: 53px;
+      height: 20px;
+      background: $darkOrange;
+      text-align: center;
+      padding-top: 3px;
+      border-radius: 4px;
+      @include font-family-width(normal, 400, 12px, 12px, $white);
+    }
+    &__show-img {
+      position: absolute;
+      height: 300px;
+      width: 200px;
+      border-radius: 10px;
+    }
+    &__adBanner {
+      display: inline-block;
+      width: 100%;
+      height: 300px;
+      border-radius: 20px;
+      border: 1px solid $shadedPurple;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .movies {
+    &__topBg {
+      display: block;
+      top: 0;
+    }
+    &__mtopbgimg {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    &__mTop {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 20px 50px 20px;
+    }
+    &__sls-text1 {
+      padding-top: 15px;
+      @include font-style-Baloo(normal, 400, 54px, 48px, $white);
+      opacity: 0.2;
+      position: relative;
+    }
+    &__sls-text2 {
+      top: 55px;
+      left: 22px;
+      @include font-style-Baloo(normal, 400, 24px, 31px, $white);
+      position: absolute;
+    }
+    &__title {
+      display: none;
+    }
+    &__janeRightLogo {
+      display: block;
+      position: relative;
+      padding-bottom: 50px;
+    }
+    &__janeRightImg {
+      position: absolute;
+      top: -48px;
+      right: 0px;
+      width: 120px;
+      height: 250px;
+      z-index: -1;
+    }
+    &__subCategories {
+      &__spl-asset1 {
+        display: none;
+      }
+      &__sls-text1 {
+        display: none;
+      }
+      &__title-container {
+        display: none;
+      }
+      &__mt {
+        margin-top: 70px;
+      }
+      &__subcat-vlist1 {
+        margin: 10px 10px;
+      }
+      &__subcat-vlist2 {
+        margin: 10px 10px;
+      }
+      &__img-container {
+        position: relative;
+        height: 220px;
+        width: 160px;
+        margin: 0px 6px 15px 6px;
+        border-radius: 10px;
+      }
+      &__img-container:hover {
+        z-index: 0;
+        transform: scale3d(0, 0, 0);
+      }
+      &__card-img {
+        position: absolute;
+        height: 220px;
+        width: 160px;
+        border-radius: 10px;
+      }
+      &__show-img {
+        position: absolute;
+        max-height: 220px;
+        width: 160px;
+        border-radius: 12px;
+      }
+    }
+    &__adBannerContainer {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .movies {
+    &__topBg {
+      display: block;
+      top: 0;
+    }
+    &__mtopbgimg {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    &__mTop {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 20px 80px 20px;
+    }
+    &__sls-text1 {
+      padding-top: 15px;
+      @include font-style-Baloo(normal, 400, 54px, 48px, $white);
+      opacity: 0.2;
+      position: relative;
+    }
+    &__sls-text2 {
+      top: 55px;
+      left: 22px;
+      @include font-style-Baloo(normal, 400, 24px, 31px, $white);
+      position: absolute;
+    }
+    &__title {
+      display: none;
+    }
+    &__janeRightLogo {
+      position: relative;
+      padding-bottom: 50px;
+    }
+    &__janeRightImg {
+      position: absolute;
+      top: -48px;
+      right: 0px;
+      width: 120px;
+      height: 250px;
+      z-index: -1;
+    }
+    &__subCategories {
+      &__spl-asset1 {
+        display: none;
+      }
+      &__sls-text1 {
+        display: none;
+      }
+      &__title-container {
+        display: none;
+      }
+      &__mt {
+        margin-top: 70px;
+      }
+      &__subcat-vlist1 {
+        margin: 10px 10px;
+      }
+      &__subcat-vlist2 {
+        margin: 10px 10px;
+      }
+      &__img-container {
+        position: relative;
+        height: 220px;
+        width: 160px;
+        margin: 0px 6px 15px 6px;
+        border-radius: 10px;
+      }
+      &__img-container:hover {
+        z-index: 0;
+        transform: scale3d(0, 0, 0);
+      }
+      &__card-img {
+        position: absolute;
+        height: 220px;
+        width: 160px;
+        border-radius: 10px;
+      }
+      &__show-img {
+        position: absolute;
+        max-height: 220px;
+        width: 160px;
+        border-radius: 12px;
+      }
+    }
+    &__adBannerContainer {
+      display: none;
+    }
+  }
+}

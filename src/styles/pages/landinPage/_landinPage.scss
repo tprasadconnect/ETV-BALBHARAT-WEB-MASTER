@@ -1,0 +1,197 @@
+// body {
+//   font-family: 'Poppins', sans-serif;
+//   background-color: $lightGray;
+// }
+.homeLandingPage {
+  a,
+  input,
+  select,
+  button {
+    outline: none !important;
+  }
+
+  .homeNavigation {
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    height: 80px;
+    padding: 0 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+    }
+    li a {
+      display: inline-block;
+      font-size: 12px;
+      color: $black;
+      font-weight: 500;
+      text-decoration: none;
+      padding-top: 12px;
+      margin: 0 45px;
+    }
+    li a span {
+      display: block;
+    }
+    li a.logo {
+      background-image: url('../../../assets/images/home/new/logo-bg.svg');
+      width: 130px;
+      height: 107px;
+      // vertical-align: top;
+    }
+    .loginButton {
+      padding-top: 20px;
+    }
+    .hiGirlPic {
+      position: absolute;
+      left: 0px;
+    }
+  }
+  .homeBanner {
+    padding-top: 107px;
+  }
+  .carouselContent {
+    padding-top: 110px;
+    padding-bottom: 20px;
+  }
+  .cardMainPic {
+    background-image: url('../../../assets/images/home/new/img1.jpg');
+  }
+
+  .afterpinkLTRB:after {
+    @include crossLineLTRB($lightPurple8);
+  }
+  .afterblueLTRB:after {
+    @include crossLineLTRB($darkBlue);
+  }
+  .afterpeachLTRB:after {
+    @include crossLineLTRB($lightYellow2);
+  }
+  .afterDBlueLTRB:after {
+    @include crossLineLTRB($darkBlue2);
+  }
+
+  .afterpinkLBRT:after {
+    @include crossLineLBRT($lightPurple8);
+  }
+  .afterblueLBRT:after {
+    @include crossLineLBRT($darkBlue);
+  }
+  .afterpeachLBRT:after {
+    @include crossLineLBRT($lightYellow2);
+  }
+  .afterDBlueLBRT:after {
+    @include crossLineLBRT($darkBlue2);
+  }
+
+  .Explore {
+    height: 250px;
+    padding: 30px;
+    background-image: url('../../../assets/images/home/new/GlobalShows-img.jpg');
+    background-size: cover;
+    margin: 40px 0;
+    color: $white;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .homeMybb {
+    background-color: $darkBlue2;
+    background-image: url('../../../assets/images/home/new/mybb-bg.svg');
+    background-size: cover;
+    padding: 50px 0px 100px 0;
+    .box {
+      background: $white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      height: calc(100% - 30px);
+      .mybbBackImage {
+        height: 240px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+      }
+      .name {
+        padding: 10px 15px;
+        font-size: 20px;
+        color: $white;
+        text-align: center;
+        font-family: 'Baloo 2', cursive;
+        line-height: 20px;
+      }
+    }
+    .box.yellowcolor {
+      background-color: $darkYellow2;
+    }
+    .box.greencolor {
+      background-color: $greenLight;
+    }
+
+    .box2 {
+      background: $white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      height: calc(100% - 30px);
+      background-image: url('../../../assets/images/home/new/img4.png');
+      background-size: cover;
+      position: relative;
+      color: $white;
+      padding: 100px 15px 15px 15px;
+
+      h3 {
+        font-family: 'Baloo 2', cursive;
+        font-size: 20px;
+        color: $white;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .know {
+        color: $darkYellow3;
+        text-decoration: none;
+      }
+      .content {
+        z-index: 1;
+        position: relative;
+      }
+    }
+
+    .box2:before {
+      content: '';
+      background-color: $blackTwo;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      left: 0px;
+      top: 0px;
+    }
+    h2 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 32px;
+      color: $white;
+      padding-bottom: 20px;
+    }
+    .mybbGames {
+      background-image: url('../../../assets/images/home/new/img3.png');
+    }
+    .mybbActivities {
+      background-image: url('../../../assets/images/home/new/img5.png');
+    }
+    .mybbEbooks {
+      background-image: url('../../../assets/images/home/new/img6.png');
+    }
+  }
+}

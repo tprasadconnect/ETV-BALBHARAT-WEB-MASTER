@@ -1,0 +1,68 @@
+.welcome-banner {
+  color: $white;
+  
+  @include smallDisplay() {
+    div:last-child {
+      &:not(.welcome-banner__logo){
+        width: 100%;
+      }
+    }
+  }
+
+  @include smallDisplay() {
+    padding-top: 0rem;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+  }
+  padding-top: 1.25rem;
+  &__logo {
+    position: absolute;
+    top: -50px;
+    background: $white;
+    padding: 0 30px;
+    border-radius: 0px 0px 8px 8px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 30px;
+      bottom: -28px;
+      background-image: url('../../assets/images/active-menu.svg');
+      background-repeat: no-repeat;
+    }
+    @include smallDisplay() {
+      top: -20px;
+    }
+  }
+  &__L-Text1 {
+    @include smallDisplay() {
+      font-size: 0.75rem;
+    }
+    font-size: 1.125rem;
+    margin-top: 5rem;
+    padding-bottom: 0.625rem;
+  }
+  &__L-Text2 {
+    @include smallDisplay() {
+      font-size: 1.5rem;
+    }
+    font-size: 2.25rem;
+    @include font-family-Baloo;
+  }
+  &__L-Text3 {
+    @include smallDisplay() {
+      padding-bottom: 0rem;
+    }
+    padding-bottom: 3.125rem;
+  }
+  p {
+    @include smallDisplay() {
+      font-size: 0.75rem;
+    }
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

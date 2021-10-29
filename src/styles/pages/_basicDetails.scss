@@ -1,0 +1,25 @@
+.basic-Details {
+  &__gender {
+    position: relative;
+    padding-bottom: 20px;
+    &__e-gender {
+      display: inline-block;
+      margin-right: 20px;
+      width: 90px;
+      height: 90px;
+      background: $white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      border-radius: 50%;
+      padding-top: 18px;
+      border: 2px solid $white;
+    }
+    .active {
+      border: 2px solid $purple;
+    }
+  }
+
+  &__error-text {
+    @include font-family-width(normal, 500, 12px, 21px, $red);
+  }
+}

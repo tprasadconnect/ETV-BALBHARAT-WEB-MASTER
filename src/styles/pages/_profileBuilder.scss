@@ -1,0 +1,110 @@
+.profile-builder {
+  &__h2.title {
+    color: $white;
+  }
+  &__birth-details {
+    margin-top: 2rem;
+  }
+
+  &__P-content {
+    @include smallDisplay() {
+      padding: 15px;
+    }
+    background: $white;
+    border-radius: 50px;
+    padding: 50px;
+  }
+
+  &__pdetails {
+    background: $white;
+    border-radius: 50px;
+    padding: 0px 30px 20px;
+  }
+
+  &__steps {
+    @include smallDisplay() {
+      @include flex-box;
+      justify-content: space-between;
+    }
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    &__text {
+      width: 70px;
+    }
+    &__e-step {
+      @include smallDisplay() {
+        display: grid;
+        padding: 0 20px;
+      }
+      display: inline-flex;
+      padding: 0 25px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      color: $purple;
+      cursor: pointer;
+      &__s-bg {
+        background-image: url(../../assets/images/step-bg.svg);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 14px;
+        text-align: center;
+        padding-top: 11px;
+        @include font-style-Baloo(normal, 500, 16px, 20px);
+      }
+      .active &__s-bg {
+        background-image: url(../../assets/images/step-bg-hover.svg);
+      }
+    }
+    .active > span {
+      font-weight: 700;
+    }
+  }
+
+  // ===================  profile css start ===========================
+  &__profile {
+    display: flex;
+    justify-content: flex-end;
+    @include smallDisplay() {
+      @include flex-box;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+  }
+  &__e-profile {
+    @include smallDisplay() {
+      padding-left: 0.5rem;
+    }
+    display: inline-flex;
+    padding-left: 20px;
+    @include font-style-Baloo(normal, 400, 14px, 20px, $white);
+    max-width: 190px;
+    text-align: left;
+    align-items: center;
+  }
+  // ===================  profile css End ===========================
+
+  // ===================  profile details css start ===========================
+  &__profile-details {
+    &__bg {
+      background-image: url(../../assets/images/fireWork.svg);
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    &__title {
+      @include font-style-Baloo(normal, 500, 24px, 20px, $purple);
+    }
+    &__sub-title {
+      @include font-family-width(normal, 500, 12px, 18px, $lightGrey);
+    }
+    &__add-profile {
+      @include font-family-width(normal, 500, 14px, 21px, $grey80);
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  // ===================  profile details css End ===========================
+}

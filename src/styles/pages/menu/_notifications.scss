@@ -1,0 +1,99 @@
+.notifications {
+  overflow: auto !important;
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.25px;
+    color: $lightPurple7;
+  }
+
+  &__messages {
+    height: 370px;
+  }
+
+  &__notification-container {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  &__notification-container:hover {
+    background-color: rgba(249, 38, 93, 0.1);
+  }
+  &__notification-vertical-align {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  &__notification-img-container {
+    display: inline-block;
+    width: 10%;
+    padding-top: 14px;
+  }
+  &__notification-titleInfo {
+    padding-top: 25px;
+  }
+  &__notification-typeInfo {
+    padding-top: 30px;
+  }
+  &__notification-datetime {
+    @include font-family-width(normal, 400, 12px, 18px, $grey90);
+  }
+  &__notification-img {
+    width: 90px;
+    height: 60px;
+    border-radius: 4px;
+  }
+  &__notification-info {
+    display: inline-flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+  &__notification-title {
+    @include font-family-width(normal, 400, 14px, 21px, $grey90);
+  }
+  &__notification-time {
+    @include font-family-width(normal, 400, 12px, 18px, $grey90);
+  }
+  &__notification-link {
+    @include font-family-width(normal, 600, 16px, 24px, $red05);
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .notifications {
+    &__messages {
+      &__sub {
+        &__img-container {
+          border-radius: 4px;
+          width: 50px;
+          height: 30px;
+        }
+        &__data-container {
+          display: none;
+        }
+      }
+    }
+    &__notification-typeInfo {
+      display: none;
+    }
+    &__notification-img-container {
+      display: inline-block;
+      width: 5%;
+      padding-top: 24px;
+    }
+    &__notification-img {
+      width: 50px;
+      height: 30px;
+      border-radius: 2px;
+    }
+    &__notification-titleInfo {
+      padding-top: 15px;
+    }
+  }
+}

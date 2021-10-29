@@ -1,0 +1,12 @@
+{
+  "mobileNumber": "Mobile Number",
+  "password": "Password",
+  "forgotPassword": "Forgot Password?",
+  "login": "Login",
+  "socialLogin": "Login with Social Media",
+  "mobileNumberRequired":"Mobile Number is required",
+  "enterValidNumber":"Enter Valid Number",
+  "passwordRequired" :"Password is required",
+  "socialMediaLogin" :"Social Media Login",
+  "enterMobileNumber" :"Enter your mobile number to verify and continue to login with social media"
+}

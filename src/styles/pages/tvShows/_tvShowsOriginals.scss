@@ -1,0 +1,179 @@
+.TvShowsOriginals {
+  &__SP-sec1 {
+    position: relative;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    .SPS-text1 {
+      top: -60px;
+      font-size: 120px;
+      font-family: 'Baloo 2', cursive;
+      color: #000000;
+      opacity: 0.08;
+      position: absolute;
+      margin-left: 100px;
+    }
+    h3 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 36px;
+      color: #000;
+      padding-left: 100px;
+      padding-bottom: 40px;
+    }
+    h3 span {
+      display: block;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      padding-bottom: 15px;
+    }
+    &__SPS-asset1 {
+      position: absolute;
+      left: 0px;
+      top: -112px;
+    }
+    &__viewall-container {
+      display: block;
+      text-align: right;
+      white-space: nowrap;
+      padding-right: 30px;
+      margin-top: 25px;
+    }
+    &__originals-viewall-link {
+      display: none;
+    }
+    &__subContent {
+      .card-img {
+        padding: 10px;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        background-color: transparent;
+      }
+      .bg-dark {
+        background-color: transparent !important;
+        border: 0px;
+      }
+      .bg-dark:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+      }
+      .card-img:hover {
+        display: block !important;
+      }
+      .bg-dark .card-img-overlay {
+        top: 230px;
+        display: none;
+      }
+      .bg-dark:hover .card-img-overlay {
+        display: block;
+      }
+      .p20 {
+        padding-left: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .TvShowsOriginals {
+    &__SP-sec1 {
+      &__SPS-asset1 {
+        position: absolute;
+        left: 0px;
+        top: -150px;
+        height: 130px;
+      }
+      .p20 {
+        padding-left: 25px;
+      }
+      .SPS-text1 {
+        top: -8px;
+        font-size: 54px;
+        font-family: 'Baloo 2', cursive;
+        color: #000000;
+        opacity: 0.08;
+        position: absolute;
+        margin-left: 0px;
+      }
+      h3 {
+        font-family: 'Baloo 2', cursive;
+        font-size: 24px;
+        color: #000;
+        padding-left: 10px;
+        padding-bottom: 20px;
+      }
+      h3 span {
+        display: block;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        padding-bottom: 15px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__originals-viewall-btn {
+        display: none;
+      }
+      &__originals-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 14px, 11px, $red80);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .TvShowsOriginals {
+    &__SP-sec1 {
+      &__SPS-asset1 {
+        position: absolute;
+        left: 0px;
+        top: -150px;
+        height: 150px;
+      }
+      .p20 {
+        padding-left: 25px;
+      }
+      .SPS-text1 {
+        top: 0px;
+        font-size: 54px;
+        font-family: 'Baloo 2', cursive;
+        color: #000000;
+        opacity: 0.08;
+        position: absolute;
+        margin-left: 10px;
+      }
+      h3 {
+        font-family: 'Baloo 2', cursive;
+        font-size: 28px;
+        color: #000;
+        padding-left: 10px;
+        padding-bottom: 30px;
+      }
+      h3 span {
+        display: block;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        padding-bottom: 15px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 35px;
+      }
+      &__originals-viewall-btn {
+        display: none;
+      }
+      &__originals-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 16px, 11px, $red80);
+      }
+    }
+  }
+}

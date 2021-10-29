@@ -1,0 +1,141 @@
+@import '~bootstrap-daterangepicker/daterangepicker.css';
+
+.watchHistory {
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 30px;
+  }
+  &__caledarIcon {
+    position: absolute;
+    right: 1rem;
+    padding: 0.8rem;
+  }
+  &__caledarIcon:hover {
+    cursor: pointer;
+  }
+  &__back-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__back-text {
+      padding-left: 0.625rem;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: $lightGrey;
+    }
+  }
+  &__moviePic {
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  &__sub {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $grey80;
+  }
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.25px;
+    color: $lightPurple7;
+  }
+  .checkBox {
+    float: right;
+  }
+
+  &__subHedding {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__Loading {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $red05;
+  }
+  &__showDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $grey90;
+  }
+  &__showDescriptionSub {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $graya1;
+  }
+
+  &__showLength {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    text-transform: capitalize;
+    color: $red05;
+  }
+  &__scroll {
+    height: 240px;
+    overflow-y: auto;
+    scrollbar-width: thin !important;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+.applyBtn {
+  color: $black;
+}
+.applyBtn:hover {
+  color: $black;
+}
+
+@media only screen and (max-width: 479px) {
+  .watchHistory {
+    position: relative;
+    &__container {
+      border-radius: 25px;
+      padding: 20px;
+    }
+    &__moviePic {
+      width: 40px;
+      height: 30px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .watchHistory {
+    position: relative;
+    &__container {
+      border-radius: 25px;
+      padding: 20px;
+    }
+    &__moviePic {
+      width: 40px;
+      height: 30px;
+      border-radius: 5px;
+    }
+  }
+}

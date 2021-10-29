@@ -1,0 +1,180 @@
+.TvShowsEdutainment {
+  &__SP-sec4 {
+    position: relative;
+    margin: 100px 0;
+    padding: 40px 0;
+    background-color: #ffcf4bb3;
+    h3 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 36px;
+      color: #463987;
+      padding-bottom: 40px;
+    }
+    h3 span {
+      display: block;
+      @include font-family-width(normal, 400, 12px, 15px, $black);
+      padding-bottom: 15px;
+    }
+
+    &__SPS-asset5 {
+      position: absolute;
+      left: 26%;
+      top: -100px;
+    }
+    &__subContent {
+      &__SPS-text1 {
+        top: -120px;
+        left: 127px;
+        font-size: 120px;
+        font-family: 'Baloo 2', cursive;
+        color: #463987;
+        opacity: 0.08;
+        position: absolute;
+      }
+      .card-img {
+        padding: 10px;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        background-color: transparent;
+      }
+      .bg-dark {
+        background-color: transparent !important;
+        border: 0px;
+      }
+      .bg-dark:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+      }
+      .card-img:hover {
+        display: block !important;
+      }
+      .bg-dark .card-img-overlay {
+        top: 230px;
+        display: none;
+      }
+      .bg-dark:hover .card-img-overlay {
+        display: block;
+      }
+      .p11 {
+        padding-left: 11%;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__edutainment-viewall-link {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 479px) {
+  .TvShowsEdutainment {
+    &__SP-sec4 {
+      position: relative;
+      margin: 100px 0;
+      padding: 40px 0;
+      background-color: #ffcf4bb3;
+      &__SPS-asset5 {
+        position: absolute;
+        left: 12%;
+        top: -110px;
+        height: 150px;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-bottom: 40px;
+        padding-left: 5px;
+      }
+      .SPS-text-bb {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding-bottom: 15px;
+        margin-left: 5px;
+      }
+      &__subContent {
+        &__SPS-text1 {
+          position: absolute;
+          top: -4px;
+          left: 26px;
+          opacity: 0.08;
+          @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+        }
+        .p11 {
+          padding-left: 25px;
+        }
+        &__viewall-container {
+          display: block;
+          text-align: right;
+          white-space: nowrap;
+          padding-right: 30px;
+          margin-top: 25px;
+        }
+        &__edutainment-viewall-btn {
+          display: none;
+        }
+        &__edutainment-viewall-link {
+          display: inline-block;
+          @include font-style-Baloo(normal, 400, 16px, 11px, $red80);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .TvShowsEdutainment {
+    &__SP-sec4 {
+      position: relative;
+      margin: 100px 0;
+      padding: 40px 0;
+      background-color: #ffcf4bb3;
+      &__SPS-asset5 {
+        position: absolute;
+        left: 14%;
+        top: -110px;
+        height: 160px;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-bottom: 40px;
+        padding-left: 15px;
+      }
+      .SPS-text-bb {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding-bottom: 15px;
+        margin-left: 15px;
+      }
+      &__subContent {
+        &__SPS-text1 {
+          position: absolute;
+          top: -4px;
+          left: 26px;
+          opacity: 0.08;
+          @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+          margin-left: 10px;
+        }
+        .p11 {
+          padding-left: 25px;
+        }
+        &__viewall-container {
+          display: block;
+          text-align: right;
+          white-space: nowrap;
+          padding-right: 30px;
+          margin-top: 25px;
+        }
+        &__edutainment-viewall-btn {
+          display: none;
+        }
+        &__edutainment-viewall-link {
+          display: inline-block;
+          @include font-style-Baloo(normal, 400, 16px, 11px, $red80);
+        }
+      }
+    }
+  }
+}

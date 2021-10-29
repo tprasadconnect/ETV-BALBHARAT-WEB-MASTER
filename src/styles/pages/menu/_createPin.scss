@@ -1,0 +1,39 @@
+.createPin {
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 30px;
+  }
+  &__back-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__back-text {
+      padding-left: 0.625rem;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: $lightGrey;
+    }
+  }
+
+  &__heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $lightPurple7;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__subTitleText {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $grey90;
+  }
+}

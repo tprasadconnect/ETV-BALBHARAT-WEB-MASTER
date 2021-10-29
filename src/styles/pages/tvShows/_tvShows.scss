@@ -1,0 +1,267 @@
+.tvShows {
+  &__emptyspace {
+    margin-top: 50px;
+  }
+  &__topBg {
+    display: none;
+  }
+  &__mTop {
+    display: none;
+  }
+  &__title {
+    display: inline-block;
+    margin: 10px 0 10px 123px;
+    @include font-style-Baloo(normal, 400, 36px, 46.51px, $purple87);
+  }
+  &__banner-image-center {
+    display: flex;
+    text-align: center;
+    width: 80%;
+  }
+  &__img-size {
+    height: 500px;
+    // border-radius: 30px;
+  }
+  &__lgradient1 {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(
+      270deg,
+      $purple87 33.8%,
+      rgba(70, 57, 135, 0) 77.26%
+    );
+    opacity: 0.8;
+  }
+  &__lgradient {
+    position: absolute;
+    width: 480px;
+    height: 500px;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, $orange 0%, rgba(255, 130, 75, 0) 100%);
+    opacity: 0.8;
+  }
+  &__banner-title {
+    position: absolute;
+    text-align: right; /* For Edge */
+    width: 300px;
+    bottom: 25%;
+    right: 100px;
+    @include font-family-width(normal, 700, 36px, 46.51px, $white);
+  }
+  &__banner-watchnow-btn {
+    position: absolute;
+    top: 80%;
+    right: 100px;
+  }
+  &__mbanner-watchnow-btn {
+    display: none;
+  }
+}
+.carousel-indicators {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  border: 1px solid $shadedPurple;
+  box-sizing: border-box;
+  border-radius: 80px;
+  background-color: $white;
+}
+
+.carousel-indicators .active {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 26px;
+  height: 8px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background: $shadedPurple;
+  border-radius: 80px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  color: $white;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.carousel-control-prev:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  // border-radius: 30px 0px 0px 30px;
+}
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  // border-radius: 0 30px 30px 0;
+}
+.Shows-Page {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 479px) {
+  .tvShows {
+    &__title {
+      display: none;
+    }
+    &__topBg {
+      display: block;
+      top: 0;
+    }
+    &__mTop {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    &__etvLogo {
+      position: 'absolute';
+      width: 15%;
+    }
+    &__toggle-menu {
+      position: 'absolute';
+      width: 15%;
+    }
+    &__img-size {
+      height: 350px;
+      // border-radius: 30px;
+    }
+    &__lgradient1 {
+      position: absolute;
+      width: 100%;
+      height: 150px;
+      left: 0;
+      top: 200px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #4d4d4d 93.75%);
+      opacity: 0.8;
+      // border-radius: 0px 0px 30px 30px;
+    }
+    &__lgradient {
+      display: none;
+    }
+    &__banner-title {
+      position: absolute;
+      text-align: justify; /* For Edge */
+      -moz-text-align-last: left; /* For Firefox prior 58.0 */
+      text-align-last: left;
+      width: 100%;
+      bottom: 20%;
+      left: 5%;
+      @include font-family-width(normal, 700, 24px, 31px, $white);
+    }
+    &__banner-watchnow-btn {
+      display: none;
+    }
+    &__mbanner-watchnow-btn {
+      display: block;
+      position: absolute;
+      top: 88%;
+      left: 33%;
+    }
+  }
+  .carousel-item {
+    height: 370px;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .tvShows {
+    &__title {
+      display: none;
+    }
+    &__topBg {
+      display: block;
+      top: 0;
+    }
+    &__mTop {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 20px 60px 20px;
+    }
+    &__etvLogo {
+      position: 'absolute';
+      width: 10%;
+    }
+    &__toggle-menu {
+      position: 'absolute';
+      width: 10%;
+    }
+    &__img-size {
+      height: 500px;
+      // border-radius: 30px;
+    }
+    &__lgradient1 {
+      position: absolute;
+      width: 100%;
+      height: 150px;
+      left: 0;
+      top: 350px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #4d4d4d 93.75%);
+      opacity: 0.9;
+      // border-radius: 0px 0px 30px 30px;
+    }
+    &__lgradient {
+      display: none;
+    }
+    &__banner-title {
+      position: absolute;
+      text-align: justify; /* For Edge */
+      -moz-text-align-last: left; /* For Firefox prior 58.0 */
+      text-align-last: left;
+      width: 100%;
+      bottom: 15%;
+      left: 5%;
+      @include font-family-width(normal, 700, 32px, 31px, $white);
+    }
+    &__banner-watchnow-btn {
+      display: none;
+    }
+    &__mbanner-watchnow-btn {
+      display: block;
+      position: absolute;
+      top: 92%;
+      left: 41.5%;
+    }
+  }
+  .carousel-item {
+    height: 520px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}

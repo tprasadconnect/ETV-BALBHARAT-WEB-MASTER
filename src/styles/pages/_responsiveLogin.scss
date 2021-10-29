@@ -1,0 +1,17 @@
+.responsiveLogin {
+  &__active_icon {
+    background-image: url(../../assets/images/red_active.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+  }
+  &__active-tab-color {
+    @include font-style-Baloo(normal, normal, 18px, 20px, $red80);
+    text-transform: uppercase;
+  }
+  &__inactive-tab-color {
+    @include font-style-Baloo(normal, normal, 18px, 20px, $grey90);
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,30 @@
+.customCarousel {
+  padding-top: 80px;
+  .banner-item {
+    img {
+      border-radius: 10px;
+    }
+  }
+  .owl-dot {
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+    span {
+      background-color: $lightRed !important;
+    }
+    &.active {
+      span {
+        background-color: $red80;
+        width: 0.75rem;
+        height: 0.75rem;
+        box-shadow: 0 0 10px 1px $lightRed;
+        border: 2px solid $white;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 200px) {
+  .customCarousel {
+    padding-top: 0px;
+  }
+}

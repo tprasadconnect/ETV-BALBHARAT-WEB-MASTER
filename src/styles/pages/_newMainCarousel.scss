@@ -1,0 +1,294 @@
+.customCarousel {
+  .customCarouselMain {
+    // padding-top: 8%;
+    // padding-left: 60px;
+    // padding-right: 60px;
+    .carousel-control-next:hover,
+    .carousel-control-prev:hover {
+      background-color: white;
+      opacity: 1;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      background-color: white;
+      opacity: 1;
+    }
+    .carousel-control-prev-icon {
+      background-image: url('../../assets/images/home/new/left-arrow.svg');
+    }
+    .carousel-control-next-icon {
+      background-image: url('../../assets/images/home/new/right-arrow.svg');
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 53px;
+      height: 45px;
+      padding-top: 8%;
+    }
+  }
+  .mainCarousel {
+    &__img-size {
+      height: 500px;
+      // border-radius: 30px;
+    }
+    &__banner-title {
+      position: absolute;
+      text-align: right; /* For Edge */
+      width: 300px;
+      bottom: 25%;
+      right: 100px;
+      @include font-family-width(normal, 700, 36px, 46.51px, $white);
+    }
+    &__banner-watchnow-btn {
+      position: absolute;
+      top: 80%;
+      right: 100px;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    color: $white;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+  }
+  .carousel-control-prev:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    // border-radius: 30px 0px 0px 30px;
+  }
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    // border-radius: 0 30px 30px 0;
+  }
+  .Shows-Page {
+    overflow: hidden;
+  }
+  &__img-size {
+    height: 500px;
+    // border-radius: 30px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    .mainCarousel {
+      &__title {
+        display: none;
+      }
+      &__topBg {
+        display: block;
+        top: 0;
+      }
+      &__mTop {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      &__etvLogo {
+        position: 'absolute';
+        width: 15%;
+      }
+      &__toggle-menu {
+        position: 'absolute';
+        width: 15%;
+      }
+      &__img-size {
+        height: 350px;
+        // border-radius: 30px;
+      }
+      &__lgradient1 {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        left: 0;
+        top: 200px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          #4d4d4d 93.75%
+        );
+        opacity: 0.8;
+      }
+      &__lgradient {
+        display: none;
+      }
+      &__banner-title {
+        position: absolute;
+        text-align: justify; /* For Edge */
+        -moz-text-align-last: left; /* For Firefox prior 58.0 */
+        text-align-last: left;
+        width: 100%;
+        bottom: 20%;
+        left: 5%;
+        @include font-family-width(normal, 700, 24px, 31px, $white);
+      }
+      &__banner-watchnow-btn {
+        display: none;
+      }
+      &__mbanner-watchnow-btn {
+        display: block;
+        position: absolute;
+        top: 88%;
+        left: 33%;
+      }
+    }
+    .carousel-item {
+      height: 370px;
+    }
+    .carousel-control-prev {
+      display: none;
+    }
+    .carousel-control-next {
+      display: none;
+    }
+    .carousel-indicators {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 780px) and (min-width: 480px) {
+    .mainCarousel {
+      &__title {
+        display: none;
+      }
+      &__topBg {
+        display: block;
+        top: 0;
+      }
+      &__mTop {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 60px 20px;
+      }
+      &__etvLogo {
+        position: 'absolute';
+        width: 10%;
+      }
+      &__toggle-menu {
+        position: 'absolute';
+        width: 10%;
+      }
+      &__img-size {
+        height: 322px;
+        // border-radius: 30px;
+      }
+      &__lgradient1 {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        left: 0;
+        top: 350px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          #4d4d4d 93.75%
+        );
+        opacity: 0.9;
+        // border-radius: 0px 0px 30px 30px;
+      }
+      &__lgradient {
+        display: none;
+      }
+      &__banner-title {
+        position: absolute;
+        text-align: justify; /* For Edge */
+        -moz-text-align-last: left; /* For Firefox prior 58.0 */
+        text-align-last: left;
+        width: 100%;
+        bottom: 15%;
+        left: 5%;
+        @include font-family-width(normal, 700, 32px, 31px, $white);
+      }
+      &__banner-watchnow-btn {
+        display: none;
+      }
+      &__mbanner-watchnow-btn {
+        display: block;
+        position: absolute;
+        top: 92%;
+        left: 41.5%;
+      }
+    }
+    .carousel-item {
+      height: 320px;
+    }
+    .carousel-indicators {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 781px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 420px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1220px) and (min-width: 1024px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 500px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1366px) and (min-width: 1221px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 590px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1600px) and (min-width: 1367px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 650px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 1800px) and (min-width: 1601px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 800px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 1920px) and (min-width: 1801px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 900px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 2560px) and (min-width: 1921px) {
+    .mainCarousel {
+      padding-top: 24px;
+      &__img-size {
+        height: 950px !important;
+      }
+    }
+  }
+  // .carouselImageTransform:hover {
+  //   transform: scale(1.03);
+  //   transition: all 300ms;
+  // }
+  .owl-carousel.owl-drag .owl-item:hover {
+    transform: scale(1.03);
+    transition: all 300ms;
+  }
+  .owl-carousel.owl-drag .owl-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

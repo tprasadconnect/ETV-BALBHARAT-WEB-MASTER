@@ -1,0 +1,188 @@
+@mixin font-family-width(
+  $style: normal,
+  $weight: normal,
+  $size: medium,
+  $line-height: 0rem,
+  $color: ''
+) {
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  @if $color != '' {
+    color: $color;
+  }
+}
+
+@mixin font-style-Baloo(
+  $style: normal,
+  $weight: normal,
+  $size: medium,
+  $line-height: 0rem,
+  $color: ''
+) {
+  font-family: 'Baloo 2', cursive;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  @if $color != '' {
+    color: $color;
+  }
+}
+
+@mixin font-family-Poppins {
+  font-family: Poppins;
+}
+
+@mixin font-family-Baloo {
+  font-family: 'Baloo 2', cursive;
+}
+
+@mixin social-media-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-right: 0.625rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+// ============================ flex box related mixins ============================
+@mixin justify-center {
+  justify-content: center;
+}
+@mixin align-center {
+  align-items: center;
+}
+@mixin flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-row {
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  flex-direction: column;
+}
+
+@mixin align-center {
+  align-items: center;
+}
+@mixin align-start {
+  align-items: flex-start;
+}
+// ============================ flex box related mixins ============================
+@mixin text-center {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+@mixin login-flow-form {
+  &__form-left-margin {
+    @include smallDisplay() {
+      padding-top: 1rem;
+      margin-left: 0%;
+      padding-right: 0%;
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+    margin-left: 4%;
+    padding-right: 4%;
+  }
+  &__title {
+    @include font-style-Baloo(normal, normal, 24px, 1.25rem, $black);
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  &__sub-title {
+    @include font-family-width(normal, normal, 12px, 18px, $grey100);
+    padding-bottom: 2.5rem;
+    padding-top: 0.3rem;
+  }
+  &__sub-title-14 {
+    @include font-family-width(normal, normal, 14px, 1.125rem, $grey100);
+    padding-bottom: 2.5rem;
+    padding-top: 0.3rem;
+  }
+}
+
+@mixin avatar-image($acatar-name) {
+  background-image: url('../../assets/images/avatar/' + $acatar-name);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin account-card-view {
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 30px;
+  }
+  &__back-btn {
+    @include flex-box;
+    @include align-center;
+    cursor: pointer;
+    &__back-text {
+      padding-left: 0.625rem;
+      @include font-family-width(normal, 600, 1.125rem, 1.25rem, $lightGrey);
+    }
+  }
+  &__title {
+    @include font-family-width(normal, bold, 1.125rem, 1.25rem, $lightpurple80);
+  }
+}
+
+@mixin big-avatar-by-size($height, $width) {
+  max-width: $width;
+  max-height: $height;
+  min-width: $width;
+  min-height: $height;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border-radius: 50%;
+  &__img {
+    vertical-align: middle;
+    border-radius: 50%;
+    height: -webkit-fill-available;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+@mixin crossLineLTRB($color) {
+  content: '';
+  position: absolute;
+  left: -50px;
+  height: 50px;
+  width: 130%;
+  background-color: $color;
+  -webkit-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(1.5deg);
+  bottom: -26px;
+}
+@mixin crossLineLBRT($color) {
+  content: '';
+  position: absolute;
+  left: -50px;
+  height: 50px;
+  width: 130%;
+  background-color: $color;
+  -webkit-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1.5deg);
+  bottom: -22px;
+}

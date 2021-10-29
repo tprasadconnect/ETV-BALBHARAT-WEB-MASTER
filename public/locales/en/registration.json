@@ -1,0 +1,11 @@
+{
+    "firstName":"FIRST NAME",
+    "lastName":"LAST NAME",
+    "mobileNumber": "MOBILE NUMBER",
+    "email": "EMAIL",
+    "password": "PASSWORD",
+    "register":"REGISTER",
+    "registerSuccess":"Registration Successfull",
+    "accountCreatedSuccess":"You have successfully created an account.",
+    "okay":"OKAY"
+}

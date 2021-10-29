@@ -1,0 +1,97 @@
+.language-block {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(1.62deg, #070330, #648cfc);
+    padding-top: 95px;
+    text-align: center;
+    .imgbg {
+        position: absolute;
+    }
+    .imgbg1 {
+        top: 0px;
+        right: 339px;
+    }
+    .imgbg2 {
+        bottom: 46px;
+        right: 17px;
+        z-index: 0;
+    }
+    .imgbg3 {
+        bottom: 0px;
+        left: 0px;
+    }
+    &-heading {
+        @include font-family-Baloo();
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        margin-top: 26px;
+        margin-bottom: 60px;
+    }
+    .regions {
+        margin-bottom: 32px;
+    }
+    .regions .image-container {
+        display: inline-block;
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        background-color: $white;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        &:hover, &-active {
+            -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+            -webkit-box-shadow: 0px 0px 0px 3px $darkYellow3, 0px 0px 0px 5px rgba(100, 140, 252, 0.9),
+                0px 0px 0px 12px $darkYellow3;
+            box-shadow: 0px 0px 0px 3px $darkYellow3, 0px 0px 0px 5px rgba(100, 140, 252, 0.9), 0px 0px 0px 12px $darkYellow3;
+        }
+        .region-image {
+            width: 115px;
+            height: 88px;
+            position: absolute;
+            top: 8%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    .lang-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+        padding-top: 7px;
+        text-transform: capitalize;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+@include smallDisplay() {
+    .language-block {
+        padding-bottom: 30px;
+        .imgbg {
+            display: none;
+        }
+        &-heading {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .image-container {
+            width: 76px;
+            height: 76px;
+            .region-image {
+                width: 90px;
+                height: 50px;
+            }
+        }
+        .lang-name {
+            font-size: 10px;
+            font-weight: 500;
+            padding-left: 3px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.mainFooter {
+  footer {
+    background-color: $blue;
+    position: relative;
+    padding: 50px 0 40px 0;
+    font-size: 14px;
+    color: $white;
+    z-index: 20;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -9px;
+      width: 100%;
+      height: 10px;
+      left: 0;
+      background-image: url('../../../assets/images/footer-arrow.svg');
+    }
+
+    .links a {
+      font-size: 14px;
+      color: $white;
+      text-decoration: none;
+      margin: 0 20px;
+      display: inline-block;
+    }
+
+    hr {
+      border-top: 1px solid $darkYellow;
+    }
+    .footerSocialLinks {
+      padding-left: 5px;
+    }
+    .termsLinks a {
+      font-size: 14px;
+      color: $white;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      padding-top: 0px;
+    }
+  }
+  .socialIconsForMobiles {
+    display: none;
+  }
+  .subFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .subText {
+      white-space: nowrap;
+    }
+  }
+  .imageBackground {
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: $white;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+.webLogoFooter {
+  width: 51px !important;
+  height: 40px !important;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .socialIconsForMobiles {
+    display: block !important;
+  }
+  .socialIconsForWeb {
+    display: none;
+  }
+  .mainFooter {
+    footer {
+      .termsLinks {
+        a {
+          padding-top: 10px !important;
+        }
+      }
+      .links {
+        a {
+          margin: 0px;
+        }
+      }
+      .footerSocialLinks {
+        padding-left: 0px !important;
+      }
+    }
+  }
+}

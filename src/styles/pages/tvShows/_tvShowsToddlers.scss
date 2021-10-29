@@ -1,0 +1,192 @@
+.TvShowsToddlers {
+  .SPS-asset2 {
+    position: absolute;
+    right: 0px;
+    top: -195px;
+  }
+  .SPS-asset3 {
+    position: absolute;
+    left: 23%;
+    top: -100px;
+    z-index: 5;
+  }
+  &__SP-sec2 {
+    position: relative;
+    background-image: url('../../../assets/images/tvShows/TS-bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 80px 0;
+    padding: 40px 0;
+    .SPS-text1 {
+      top: -52px;
+      left: 127px;
+      font-size: 120px;
+      font-family: 'Baloo 2', cursive;
+      color: #000000;
+      opacity: 0.08;
+      position: absolute;
+    }
+    h3 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 36px;
+      color: #000;
+      padding-bottom: 40px;
+    }
+    h3 span {
+      display: block;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      padding-bottom: 15px;
+    }
+    &__viewall-container {
+      display: block;
+      text-align: right;
+      white-space: nowrap;
+      padding-right: 30px;
+      margin-top: 25px;
+    }
+    &__toddler-viewall-link {
+      display: none;
+    }
+    &__subContent {
+      .card-img {
+        padding: 10px;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        background-color: transparent;
+      }
+      .bg-dark {
+        background-color: transparent !important;
+        border: 0px;
+      }
+      .bg-dark:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+      }
+      .card-img:hover {
+        display: block !important;
+      }
+      .bg-dark .card-img-overlay {
+        top: 230px;
+        display: none;
+      }
+      .bg-dark:hover .card-img-overlay {
+        display: block;
+      }
+      .p11 {
+        padding-left: 11%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .TvShowsToddlers {
+    .SPS-asset2 {
+      position: absolute;
+      right: 0px;
+      top: -140px;
+      height: 150px;
+    }
+    .SPS-asset3 {
+      position: absolute;
+      left: 16%;
+      top: -110px;
+      height: 150px;
+    }
+    &__SP-sec2 {
+      .SPS-text1 {
+        top: 2px;
+        left: 26px;
+        @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+        opacity: 0.08;
+        position: absolute;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-bottom: 40px;
+        padding-left: 5px;
+      }
+      h3 span {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding-bottom: 15px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__toddler-viewall-btn {
+        display: none;
+      }
+      &__toddler-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 14px, 11px, $red80);
+      }
+      &__subContent {
+        .p11 {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .TvShowsToddlers {
+    .SPS-asset2 {
+      position: absolute;
+      right: 0px;
+      top: -140px;
+      height: 160px;
+    }
+    .SPS-asset3 {
+      position: absolute;
+      left: 14%;
+      top: -110px;
+      height: 160px;
+    }
+    &__SP-sec2 {
+      .SPS-text1 {
+        top: 2px;
+        left: 26px;
+        @include font-style-Baloo(normal, 400, 54px, 69px, $black);
+        opacity: 0.08;
+        position: absolute;
+        margin-left: 10px;
+      }
+      h3 {
+        @include font-style-Baloo(normal, 400, 24px, 31px, $black);
+        padding-bottom: 40px;
+        padding-left: 15px;
+      }
+      h3 span {
+        display: block;
+        @include font-family-width(normal, 400, 12px, 15px, $black);
+        padding-bottom: 15px;
+      }
+      &__viewall-container {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-top: 25px;
+      }
+      &__toddler-viewall-btn {
+        display: none;
+      }
+      &__toddler-viewall-link {
+        display: inline-block;
+        @include font-style-Baloo(normal, 400, 16px, 11px, $red80);
+      }
+      &__subContent {
+        .p11 {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}

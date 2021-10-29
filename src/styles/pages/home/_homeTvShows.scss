@@ -1,0 +1,113 @@
+.Home-TVshows {
+  margin-top: 200px;
+  background-color: #463987;
+  padding-bottom: 40px;
+  position: relative;
+
+  &__title-subTitle-container {
+    padding: 0 114px;
+  }
+
+  &__HT-text1 {
+    font-size: 120px;
+    font-family: 'Baloo 2', cursive;
+    position: absolute;
+    top: -98px;
+    left: 124px;
+    color: #46398740;
+  }
+  &__HT-img1 {
+    position: absolute;
+    top: -170px;
+    left: 285px;
+  }
+  &__HT-asset1 {
+    position: absolute;
+    left: 700px;
+    top: 20px;
+  }
+  &__HT-asset2 {
+    position: absolute;
+    top: 55px;
+    right: 40px;
+  }
+  &__HT-links {
+    text-align: right;
+    padding-bottom: 15px;
+    font-family: 'Baloo 2', cursive;
+  }
+
+  &__HT-links span {
+    font-size: 18px;
+    cursor: pointer;
+    color: #d8d8d8;
+    padding: 3px;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  &__HT-links span:hover,
+  &__HT-links span.active {
+    color: #fff;
+  }
+  h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 36px;
+    color: #fff;
+    margin: 0px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .bg-dark {
+    background-color: #463987 !important;
+    border: 0px;
+  }
+
+  .bg-dark:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+  }
+  .card-img {
+    padding: 10px;
+    border: 0px solid 463987;
+    border-radius: 25px;
+  }
+  .card-img:hover {
+    display: block !important;
+  }
+  .bg-dark .card-img-overlay {
+    top: 230px;
+    display: none;
+  }
+  .bg-dark:hover .card-img-overlay {
+    display: block;
+  }
+  &__imageCustom {
+    width: 230px !important;
+    height: 320px !important;
+  }
+  &__noData {
+    color: white;
+    text-align: center;
+  }
+  &__dark-gradient {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  &__show-content {
+    position: absolute;
+    bottom: 0px;
+  }
+  &__show-details {
+    margin: 10px;
+    @include font-family-width(normal, 700, 20px, 20px, $white);
+  }
+  &__show-info {
+    margin: 10px;
+    @include font-family-width(normal, 400, 14px, 20px, $white);
+  }
+}

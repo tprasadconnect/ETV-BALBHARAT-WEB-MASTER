@@ -1,0 +1,23 @@
+.pageNotFound {
+
+    &__errorNumber {
+        font-size: 64px;
+        margin-top: 150px;
+        color: $red;
+    }
+    &__errSubText {
+        font-size: 32px;
+        color: $red;
+    }
+    &__homeLink {
+        font-weight: 800;
+        cursor: pointer;
+        padding-top: 20px;
+        a {
+            color: $white;
+            padding: 3px;
+            background-color: $purple87;
+            border-radius: 5px;
+        }
+    }
+}

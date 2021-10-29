@@ -1,0 +1,63 @@
+.aboutHome {
+  * {
+    font-family: 'Poppins' !important;
+  }
+  .tone-block {
+    padding-top: 25px !important;
+  }
+  .tone-block .bg-gradient .container {
+    margin-top: -400px;
+  }
+  .video-js.vjs-fill {
+    z-index: 2 !important;
+  }
+}
+.about-block {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/images/premium-girl.png');
+    background-repeat: no-repeat;
+    right: 190px;
+    top: -40px;
+    width: 100px;
+    height: 108px;
+    z-index: 2;
+    @include mediumDisplay() {
+      right: 40px;
+    }
+    @include smallDisplay() {
+      right: 0;
+    }
+  }
+  .play-btn {
+    position: absolute;
+    z-index: 1;
+  }
+  .block-vt {
+    margin-bottom: 40px;
+    .vt-block {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 250px;
+        border-radius: 8px;
+      }
+      .text {
+        @include font-family-Baloo;
+        position: absolute;
+        z-index: 1;
+        bottom: 25px;
+        font-size: 24px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+  }
+}
+.aboutvideo{
+  border-radius: 10px;
+}

@@ -1,0 +1,125 @@
+//font variables
+$font-family-baloo: 'Baloo 2', cursive;
+$font-family-poppins: 'Poppins', sans-serif;
+// bootstrap customisation
+
+// primary color
+$primary: #663ab7;
+$accent: #f9265d;
+
+// body styles
+// $body-bg: #3D317A;
+// $body-color: #fff;
+
+// form control
+$input-border-radius: 8px 20px !important;
+$input-focus-bg: rgba(102, 58, 183, 0.1);
+$input-focus-border-color: rgba(102, 58, 183, 0.1);
+$input-focus-box-shadow: none;
+$input-height: 50px;
+$input-color: black;
+$input-font-size: 1rem;
+$input-font-weight: 500;
+
+// button
+$btn-border-radius: 12px;
+$btn-font-family: $font-family-baloo;
+$btn-font-size: 1.125rem;
+$btn-border-width: 0;
+
+//heading title
+$h2-font-size: 24px;
+$h4-font-size: 16px;
+
+// carousel indicators
+$carousel-indicator-active-bg: $accent;
+
+// font family
+$font-family-base: $font-family-poppins;
+$headings-font-family: $font-family-baloo;
+
+@import '~bootstrap/scss/bootstrap';
+@import '~video.js/src/css/vjs-cdn';
+@import '../styles/components/fonts';
+@import '../styles/abstracts/mixins';
+@import '../styles/abstracts/media';
+@import '../styles/components/colors';
+@import '../styles/components/buttons';
+@import '../styles/components/form';
+@import '../styles/components/common';
+@import '../styles/components/carousel';
+
+@import '../styles/pages/login';
+@import '../styles/pages/forgotPassword';
+@import '../styles/pages/register';
+@import '../styles/pages/newPassword';
+@import '../styles/pages/welcomeBanner';
+@import '../styles/pages/responsiveLogin';
+@import '../styles/pages/basicDetails';
+@import '../styles/pages/profileBuilder';
+@import '../styles/pages/yourAvatar';
+@import '../styles/pages/yourPreferences';
+@import '../styles/pages/menu/menu';
+@import '../styles/pages/account/account';
+@import '../styles/pages/account/editAccount';
+@import '../styles/pages/account/updateMobile';
+@import '../styles/pages/menu/accountChangePassword';
+@import '../styles/pages/menu/accountForgotPassword';
+@import '../styles/pages/home/homeTvShows';
+@import '../styles/pages/home/home';
+@import '../styles/pages/home/languages';
+@import '../styles/pages/home/continueWatching';
+@import '../styles/pages/home/banner/languages';
+@import '../styles/pages/home/banner/notifications';
+@import '../styles/pages/home/banner/search';
+@import '../styles/pages/home/movies';
+@import '../styles/pages/home/myBB';
+@import '../styles/pages/footer/footer';
+@import '../styles/pages/tvShows/tvShows';
+@import '../styles/pages/tvShows/tvShowsEdutainment';
+@import '../styles/pages/tvShows/tvShowsGlobal';
+@import '../styles/pages/tvShows/tvShowsOriginals';
+@import '../styles/pages/tvShows/tvShowsToddlers';
+@import '../styles/pages/header/header';
+@import '../styles/pages/tvShows/subCategories/subCategories';
+@import '../styles/pages/tvShows/tvShowsDetails';
+@import '../styles/pages/tvShows/similarTvShows';
+@import '../styles/pages/player';
+@import '../styles/pages/movies/similarMovies.scss';
+@import '../styles/pages/movies/moviesDetails.scss';
+@import '../styles/pages/movies';
+@import '../styles/pages/search/search';
+@import '../styles/pages/comingSoon';
+@import '../styles/pages/pageNotFound';
+@import '../styles/pages/privacyPolicy';
+@import '../styles/pages/termsOfUse';
+@import '../styles/pages/channelschedule';
+
+@import '../styles/pages/menu/feedback';
+@import '../styles/pages/menu/helpAndSupport';
+@import '../styles/pages/menu/menuLanguages';
+@import '../styles/pages/menu/myFavourites';
+@import '../styles/pages/menu/notifications';
+@import '../styles/pages/menu/subSettings';
+@import '../styles/pages/menu/switchProfile';
+@import '../styles/pages/menu/subSettings/notificationSettings';
+@import '../styles/pages/menu/subSettings/timerSettings';
+@import '../styles/pages/menu/subSettings/videoSettings';
+@import '../styles/pages/menu/subSettings/setTimer';
+@import '../styles/pages/menu/watchHistory';
+
+@import '../styles/pages/menu/createPin';
+@import '../styles/pages/menu/enterPin';
+@import '../styles/pages/landinPage/landinPage';
+@import '../styles/pages/newMainCarousel';
+
+@import '../styles/pages/toonsDetail';
+@import '../styles/pages/mybb';
+@import '../styles/pages/subscription';
+@import '../styles/pages/landinPage/newHomeOriginals';
+@import '../styles/pages/newListItems/newListItems';
+@import '../styles/pages/language';
+@import '../styles/pages/viewDetails.scss';
+@import '../styles/pages/aboutUs';
+@import '../styles/pages/newToonsThumbNail';
+@import '../styles/pages/toons/toons';

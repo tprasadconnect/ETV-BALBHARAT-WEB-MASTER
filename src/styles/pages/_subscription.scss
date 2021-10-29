@@ -1,0 +1,316 @@
+.subscription-block {
+    color: $white;
+    .basic-plan-card {
+        background: $whiteFa;
+        border: 1px solid $lightGrey20;
+        border-right: 0;
+        box-shadow: 0px 16px 35px rgba(0, 0, 0, 0.06);
+        border-radius: 16px 0px 0px 16px;
+        padding: 20px;
+        @include tillIpadView() {
+            border-radius: 16px;
+        }
+        .plan-header {
+            position: relative;
+            padding-bottom: 20px;
+            @include minDisplay() {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    left: -20px;
+                    width: calc(100% + 40px);
+                    background-color: $lightGrey20;
+                }
+            }
+            .plan-title {
+                @include font-family-Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                color: #3750B2;
+                margin-bottom: 0;
+            }
+            .plan-detail {
+                @include font-family-Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: $grey80;
+                margin-bottom: 0;
+            }
+        }
+        .plan-body {
+            position: relative;
+            padding-top: 15px;
+            .plan-body-title {
+                @include font-family-Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                color: $black;
+                margin-bottom: 10px;
+                transition: 0.3s ease all;
+                @include tillIpadView() {
+                    &.arrow {
+                        &-up {
+                            img {
+                                transform: rotate(0);
+                            }
+                        }
+                        &-down {
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .plan-items {
+                padding-left: 20px;
+                list-style: none;
+                li {
+                    @include font-family-Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $black;
+                    margin-bottom: 8px;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url('../../assets/images/check.svg');
+                        background-repeat: no-repeat;
+                        left: -22px;
+                        top: 2px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .coming-soon {
+                @include font-family-Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $black;
+                opacity: 0.8;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .alpha-plan-card {
+        @extend .basic-plan-card;
+        border-radius: 16px;
+        position: relative;
+        @include tillIpadView() {
+            margin-top: -24px;
+            padding: 0;
+        }
+        @include minDisplay() {
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../../assets/images/premium-girl.png');
+                background-repeat: no-repeat;
+                right: 14px;
+                top: 9px;
+                width: 80px;
+                height: 108px;
+                z-index: 2;
+                @include largeDisplay() {
+                    right: 0;
+                }
+            }
+        }
+        .plan-header {
+            @include tillIpadView() {
+                background-color: #FED402;
+                padding: 20px;
+                border-radius: 16px 16px 0px 0px;
+            }
+            .plan-title {
+                @include font-family-Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 27px;
+                color: #535353;
+                @include tillIpadView() {
+                    color: #3F3F3F;
+                }
+                @include minDisplay() {
+                    span {
+                        color: #FFB104;
+                    }
+                }
+            }
+        }
+        @include tillIpadView() {
+            .subscription-plan {
+                padding: 20px;
+                background: #FFFAE3;
+                .plan-list {
+                    .checkbox-plan {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        color: $black;
+                        @include font-family-Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 36px;
+                        span {
+                            font-weight: bold;
+                        }
+                        input {
+                            position: absolute;
+                            display: none;
+                            cursor: pointer;
+                            &:checked ~ .checkmark {
+                                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .checkmark {
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            height: 25px;
+                            width: 25px;
+                            background-color: $white;
+                            border-radius: 50%;
+                            border: 2px solid #339D60;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                                top: 5px;
+                                left: 5px;
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                background-color: #339D60;
+                            }
+                        }
+                    }
+                }
+                .btn-yellow {
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+        .plan-body {
+            @include tillIpadView() {
+                padding: 20px;
+            }
+            .premium-feature {
+                @include font-family-Poppins;
+                background: #FFEBC7;
+                border-radius: 14.5px;
+                padding: 5px 15px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                color: $black;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+            .plan-items {
+                @extend .plan-items;
+                li::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../../assets/images/star.svg');
+                    background-repeat: no-repeat;
+                    left: -22px;
+                    top: 2px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .subscription-plan {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .plan-list {
+                    margin-right: 8px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.popular {
+                        position: relative;
+                        &::before {
+                            content: 'Popular';
+                            position: absolute;
+                            z-index: 1;
+                            top: -6px;
+                            right: 1px;
+                            background: #FFB104;
+                            border-radius: 14.5px;
+                            @include font-family-Poppins;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $white;
+                            padding: 2px 8px;
+                        }
+                    }
+                    input {
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        color: $black;
+                        &:checked + .checkbox-plan {
+                            background-color: #3750B2;
+                            color: $white;
+                        }
+                    }
+                    .checkbox-plan {
+                        color: $black;
+                        position: relative;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 8px;
+                        padding: 12px 15px;
+                        @include font-family-Poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-bottom: 16px;
+                        cursor: pointer;
+                        @include largeDisplay() {
+                            font-size: 12px;
+                            padding: 12px 10px;
+                        }
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

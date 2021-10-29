@@ -1,0 +1,14 @@
+{
+    "sorry": "Sorry",
+    "tvshow": "TV SHOW",
+    "movie":"MOVIE",
+    "episode": "EPISODE",
+    "season": "SEASON",
+    "english": "ENGLISH",
+    "recent":"Recent",
+    "popular": "Popular",
+    "similar": "Similar",
+    "suggetions": "Suggetions",
+    "notfound": "We Couldn't find what you are looking for...",
+    "searchPlaceholder":"Search tv shows,Movies..."
+}

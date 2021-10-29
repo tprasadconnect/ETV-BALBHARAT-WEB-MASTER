@@ -1,0 +1,67 @@
+.switchProfile {
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.25px;
+    color: $lightPurple7;
+    text-align: center;
+  }
+  &__kidDetails-container {
+    height: 400px;
+    overflow-y: scroll;
+    margin: 10px 0;
+  }
+  &__kid-name {
+    position: relative;
+    @include font-family-width(normal, 500, 16px, 24px, $grey80);
+  }
+  &__add-profile-img {
+    margin-top: 28px;
+    height: 30px;
+    width: 30px;
+  }
+  &__isActive {
+    border: 2px solid #f9265d;
+  }
+  &__kidSelect {
+    position: absolute;
+    right: 40px;
+    top: -3px;
+  }
+  .activeOne {
+    font-weight: bold;
+  }
+  .notActive {
+    color: lightGrey;
+  }
+
+  .account__parent-acnt-name {
+    position: relative;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: 2560px) and (min-width: 1921px) {
+    .switchProfile__kidSelect {
+      right: 126px;
+    }
+  }
+  @media only screen and (max-width: 1920px) and (min-width: 1600px) {
+    .switchProfile__kidSelect {
+      right: 54px;
+    }
+  }
+  @media only screen and (max-width: 1599px) and (min-width: 1367px) {
+    .switchProfile__kidSelect {
+      right: 23px;
+    }
+  }
+  @media only screen and (max-width: 1366px) and (min-width: 1024px) {
+    .switchProfile__kidSelect {
+      right: 3px;
+    }
+  }
+}

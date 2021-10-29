@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  a,
+  input,
+  select,
+  button {
+    outline: none !important;
+  }
+
+  &__home-header {
+    position: relative;
+
+    &__bg img {
+      width: 100%;
+    }
+
+    &__parent-name-container {
+      margin-right: 10px;
+
+      &__parent-name {
+        @include font-family-width(normal, bold, 18px, 21px, $darkYellow);
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    &__link1 {
+      position: absolute;
+      top: 50px;
+      left: 17%;
+
+      &__Languages-link,
+      &__Languages-link:hover {
+        font-family: 'Baloo 2', cursive;
+        font-size: 32px;
+        cursor: pointer;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #ffcf4b;
+        position: absolute;
+        left: 0px;
+        top: 72px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__Languages-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #f9265d;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__notificationsCount {
+      position: absolute;
+      width: 218px;
+      height: 76px;
+      top: 150px;
+      left: 150px;
+      background-color: $white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    &__notificationsCount-row {
+      padding-top: 12px;
+    }
+    &__notificationsCount-bell {
+      padding: 5px 0 0 5px;
+    }
+    &__notificationsCount-text {
+      @include font-family-width(normal, 400, 14px, 18px, $black);
+    }
+    &__notificationsCount-view-now {
+      @include font-family-width(normal, 600, 12px, 18px, $skyBlue);
+    }
+    &__notifications-left-arrow {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: $white;
+      border-radius: 2px;
+      left: -4px;
+      top: 5px;
+      transform: rotate(-45deg);
+    }
+    &__notificationsCount-bell-count {
+      position: absolute;
+      width: 16px;
+      left: 20px;
+      background: $red;
+      text-align: center;
+      color: $white;
+      font-size: 12px;
+      border-radius: 50%;
+    }
+
+    &__link2 {
+      position: absolute;
+      top: 50px;
+      left: 40%;
+
+      &__search-link,
+      &__search-link:hover {
+        font-family: 'Baloo 2', cursive;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        right: -9px;
+        top: 30px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__search-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #f9265d;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__link3 {
+      position: absolute;
+      top: 0;
+      left: 65%;
+
+      &__notification-link,
+      &__notification-link:hover {
+        cursor: pointer;
+        font-family: 'Baloo 2', cursive;
+        font-size: 24px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        bottom: 87px;
+        left: 98px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__notification-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #ff824b;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__link4 {
+      position: absolute;
+      right: 50px;
+      top: 50px;
+      cursor: pointer;
+
+      &__login-link,
+      &__login-link:hover {
+        font-family: 'Baloo 2', cursive;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        right: 73px;
+        top: 11px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__login-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #ff824b;
+        left: 0;
+        z-index: -1;
+      }
+
+      &__profileText {
+        color: #fff !important;
+
+        div {
+          display: inline;
+        }
+      }
+
+      &__profilePic {
+        border-radius: 25px;
+        cursor: pointer;
+        border: 2px solid red;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &__link5 {
+      position: absolute;
+      left: 90px;
+      bottom: 21%;
+
+      &__shows-link,
+      &__shows-link:hover {
+        font-family: 'Baloo 2', cursive;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 3px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__shows-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #9fcd00;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__link6 {
+      position: absolute;
+      left: 42%;
+      bottom: 28%;
+
+      &__movies-link,
+      &__movies-link:hover {
+        font-family: 'Baloo 2', cursive;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #ffcf4b;
+        position: absolute;
+        right: -26px;
+        bottom: 78px;
+        text-decoration: none;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__movies-link:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #f9265d;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__mybb {
+      position: absolute;
+      right: 16px;
+      bottom: 20%;
+
+      &__mybb-head {
+        font-family: 'Baloo 2', cursive;
+        font-size: 32px;
+        cursor: pointer;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #ffcf4b;
+        position: absolute;
+        right: 69px;
+        top: -10px;
+        z-index: 0;
+        background: transparent;
+      }
+
+      // add a single stroke
+      &__mybb-head:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #f9265d;
+        left: 0;
+        z-index: -1;
+      }
+
+      &__mybb-links {
+        position: absolute;
+        right: 28px;
+        top: 34px;
+        width: 158px;
+
+        span {
+          display: block;
+          font-family: 'Baloo 2', cursive;
+          font-size: 14px;
+          cursor: pointer;
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 8px 0;
+        }
+
+        &__ML1 {
+          padding-top: 5px;
+        }
+
+        &__ML2 {
+          padding-top: 13px;
+          transform: rotate(-4deg);
+        }
+
+        &__ML3 {
+          padding-top: 18px;
+          transform: rotate(2deg);
+          padding-left: 18px;
+        }
+
+        &__ML4 {
+          padding-top: 9px;
+          padding-left: 19px;
+        }
+      }
+    }
+
+    &__explore {
+      position: absolute;
+      bottom: 8%;
+      width: 100%;
+      text-align: center;
+
+      &__explore-text {
+        font-family: 'Baloo 2', cursive;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        z-index: 0;
+        background: transparent;
+        position: relative;
+        padding-bottom: 20px;
+      }
+
+      // add a single stroke
+      &__explore-text:before {
+        content: attr(title);
+        position: absolute;
+        -webkit-text-stroke: 8px #463987;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+  }
+
+  @media screen and (max-width: 899px) and (min-width: 750px) {
+    .home {
+      padding-top: 10px;
+
+      &__main-background {
+        background-color: $white;
+        height: 100%;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    &__home-header {
+      &__logo {
+        position: absolute;
+        top: 15px;
+        left: 18px;
+        z-index: 2;
+      }
+
+      &__link4 {
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+      }
+
+      &__link3 {
+        left: 30px;
+      }
+
+      &__link2 {
+        top: 400px;
+        left: 20px;
+      }
+
+      &__link1 {
+        position: absolute;
+        top: 700px;
+        left: 20px;
+      }
+
+      &__link5 {
+        position: absolute;
+        right: 20px;
+        top: 1000px;
+        left: initial;
+      }
+
+      &__mybb {
+        position: absolute;
+        right: 16px;
+        bottom: 91px;
+      }
+
+      &__link6 {
+        position: absolute;
+        left: 15px;
+        bottom: 400px;
+      }
+    }
+  }
+
+  @include smallDisplay() {
+    .appFooter,
+    .m-appFooter {
+      display: none;
+    }
+  }
+}

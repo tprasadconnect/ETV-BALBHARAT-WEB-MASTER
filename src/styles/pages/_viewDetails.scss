@@ -1,0 +1,108 @@
+.viewDetails {
+  background-size: cover;
+  padding: 50px 0px 70px 0px;
+  background-position: center 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+.viewDetails.pinkBG {
+  background-color: $lightPurple8;
+  background-image: url('../../assets/images/home/new/BBOriginalsBg.svg');
+}
+.viewDetails.blueBG {
+  background-color: $darkBlue;
+  background-image: url('../../assets/images/home/new/GlobalShowsBg.svg');
+}
+.viewDetails.peachBG {
+  background-color: $lightYellow2;
+  background-image: url('../../assets/images/home/new/movies-bg.svg');
+}
+.viewDetails h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 32px;
+  color: $white;
+  padding-bottom: 20px;
+}
+.viewDetails .box {
+  background: $white;
+  box-shadow: 0px 8px 20px rgba(3, 3, 3, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 300ms ease-in-out;
+  &:hover{
+    transform: scale(1.05);
+  box-shadow: 1px 3px 16px 6px rgba(3, 3, 3, 0.3);
+  }
+}
+.viewDetails .box .b-img {
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
+  // border-top-left-radius: 10px;
+  // border-top-right-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+}
+.viewDetails .box .name {
+  padding: 15px;
+  font-size: 16px;
+  color: $black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 374px) and (min-width: 300px) {
+  .viewDetails .box .b-img {
+    height: 131px;
+  }
+  .viewDetails .box .name {
+    padding: 6px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 398px) and (min-width: 375px) {
+  .viewDetails .box .b-img {
+    height: 171px;
+  }
+  .viewDetails .box .name {
+    padding: 6px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 399px) {
+  .viewDetails .box .b-img {
+    height: 201px;
+  }
+  .viewDetails .box .name {
+    padding: 6px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 451px) {
+  .viewDetails .box .b-img {
+    height: 231px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 768px) {
+  .viewDetails .box .b-img {
+    height: 301px !important;
+  }
+}

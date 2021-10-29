@@ -1,0 +1,120 @@
+.videoSettings {
+  &__container {
+    background: $white;
+    border-radius: 50px;
+    padding: 30px;
+  }
+
+  &__back-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__back-text {
+      padding-left: 0.625rem;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: $lightGrey;
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.25px;
+    color: $lightpurple80;
+    padding-bottom: 40px;
+  }
+  &__optionContainer {
+    margin-bottom: 20px;
+  }
+  &__optionTitle {
+    @include font-family-width(normal, 500, 16px, 24px, $grey80);
+  }
+
+  &__subText {
+    @include font-family-width(normal, 400, 14px, 24px, $grey90);
+  }
+  &__modal {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin: 20px 0;
+      @include font-family-width(normal, 700, 16px, 24px, $grey80);
+    }
+    &__textSize-options-normal {
+      @include font-family-width(normal, 500, 12px, 18px, $grey90);
+    }
+    &__textSize-options-normal-active {
+      @include font-family-width(normal, 500, 12px, 18px, $red05);
+    }
+    &__textSize-options-large {
+      @include font-family-width(normal, 500, 14px, 21px, $grey90);
+    }
+    &__textSize-options-large-active {
+      @include font-family-width(normal, 500, 14px, 21px, $red05);
+    }
+    &__textSize-options-extra-large {
+      @include font-family-width(normal, 500, 16px, 24px, $grey90);
+    }
+    &__textSize-options-extra-large-active {
+      @include font-family-width(normal, 500, 16px, 24px, $red05);
+    }
+    &__subTitle-otions {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+    &__subTitle-blackOnWhite {
+      margin-right: 142px;
+    }
+    &__subTitle-blackOnWhite-title {
+      margin: 10px 0;
+      @include font-family-width(normal, 500, 14px, 21px, $grey90);
+    }
+    &__subTitle-blackOnWhite-title-active {
+      margin: 10px 0;
+      @include font-family-width(normal, 500, 14px, 21px, $red05);
+    }
+    &__subTitle-blackOnWhite-text {
+      padding-top: 2px;
+      text-align: center;
+      width: 80px;
+      height: 24px;
+      background: $black;
+      border-radius: 4px;
+      @include font-family-width(normal, 500, 14px, 21px, $white);
+    }
+    &__subTitle-whiteOnBlack-text {
+      padding-top: 2px;
+      text-align: center;
+      width: 80px;
+      height: 24px;
+      background: $lightSilver;
+      border-radius: 4px;
+      @include font-family-width(normal, 500, 14px, 21px, $black);
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .videoSettings {
+    &__modal {
+      &__subTitle-blackOnWhite {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 480px) {
+  .videoSettings {
+    &__modal {
+      &__subTitle-blackOnWhite {
+        margin-right: 80px;
+      }
+    }
+  }
+}

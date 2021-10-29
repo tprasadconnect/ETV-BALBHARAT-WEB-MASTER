@@ -1,0 +1,38 @@
+@media screen and (max-width: 469px) and (min-width: 300px) {
+  .homeMybb .box .mybbBackImage {
+    height: 166px;
+  }
+  .homeMybb .box2 {
+    height: calc(100% - 27px);
+  }
+  .homeMybb .box .mybbBackImage {
+    height: 123px;
+  }
+  .homeMybb .box .name {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .homeMybb .box2 p {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .homeMybb .box2 h3 {
+    font-size: 14px;
+  }
+  .homeMybb .box2 {
+    padding: 33px 5px 5px 5px;
+  }
+  .homeMybb .box2 .know {
+    font-size: 10px;
+  }
+  .homeGlobalShows .Explore {
+    height: 75px;
+    padding: 10px;
+  }
+  .homeGlobalShows .Explore h3 {
+    font-size: 10px;
+  }
+  .homeGlobalShows .Explore p {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,41 @@
+@mixin extraSmallDisplay() {
+    @media (max-width: 567px) {
+        @content;
+    }
+}
+
+@mixin smallDisplay() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mediumDisplay() {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin minDisplay() {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tillIpadView() {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin largeDisplay() {
+    @media (max-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin extraLargeDisplay() {
+    @media (max-width: 2050px) {
+        @content;
+    }
+}
